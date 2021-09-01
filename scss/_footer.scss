@@ -1,0 +1,44 @@
+
+#footer{
+    margin-top: $margin-top;
+    .footer-top{
+        @include spaceContent;
+         h3{
+            text-transform: uppercase;
+        }
+         li{
+            margin-top: .7rem;
+             a{
+                 display: $block;
+                color: $drakgray;
+                text-transform: capitalize;
+                &:hover{
+                    color: $black;
+                }
+            }
+        }
+    }
+    .footer-bottom{
+        background: $pink;
+        margin-top: 2rem;
+        padding: 30px 0;
+        .footer-bottom-item{
+            @include centerContent;
+             a{
+                 display: $block;
+                padding: 20px;
+                color: $drakgray;
+                transition: all .5 ease;
+                &:hover{
+                    transform: scale(2,2);
+                }
+            }
+        }
+        .footer-bottom-text{
+            text-align: center;
+            color: $drakgray;
+        }
+        
+    }
+    
+}

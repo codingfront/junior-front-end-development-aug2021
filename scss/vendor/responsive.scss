@@ -1,0 +1,156 @@
+@media(max-width:1440px){
+    #mobile-header{
+        display: none;
+    }
+}
+@media(max-width:1156px){
+    
+    #shipping .shipping-item-holder{
+        padding: 2rem 7rem ;
+    }
+}
+
+
+@include desktop{
+    #header{
+        display: none;
+    }
+    #mobile-header{
+        display: block;
+    } 
+    #sliders .slider-cheir:last-child{
+        display: none;
+        
+     }
+    #products .product-item{
+        width: 48%;
+    }
+    
+    #aboutus-section .aboutus-rows {
+        margin: 0;
+   } 
+
+   #shipping .shipping-item-holder{
+       padding: 2rem 5rem;
+   }
+}
+
+ @include tablet{
+    #project-wrapper {
+        & .project-wrapper-item{
+            width: 100%;
+        }
+    }
+
+    #aboutus-section .aboutus-rows .aboutus-item{
+        display: block;
+        margin-bottom: 10px;
+        .aboutus-item-holder {
+            margin-bottom: 15px;
+        }
+    }
+    
+   #aboutus-section {
+       & .aboutus-rows{
+           margin: 0 1rem;
+           
+
+       }
+       
+       #aboutus-section .aboutus-rows .aboutus-item{
+            display: block;
+           grid-template-columns: 1fr;
+           & .aboutus-newsletter{
+               margin: 0 ;
+           & .news-letter-spacing{
+               padding-bottom:1rem ;
+           }
+           } 
+        }
+        & .aboutus-content-img-item{
+           margin-right: 0; 
+        }
+   }
+  
+   
+       #shipping .shipping-item-holder{
+           margin: 1rem 12px;
+           padding: 2rem ;
+       }
+      
+        
+}
+@media(max-width:886px){
+    #aboutus-section .aboutus-rows .aboutus-item .aboutus-background-spacing {
+        padding: 27px;
+    }
+
+}
+ 
+
+
+@include phonePlus{
+     #products {
+         margin-left: 10px;
+         gap: 10px;
+        & .product-item{
+            width: 100%;
+        } 
+     }
+    
+    
+    #latest .latest-product-item{
+        width: 50%;
+    }
+   
+    #aboutus-section .aboutus-rows {
+        margin: 0 15px;
+        & .aboutus-content{
+            display: block;
+            & .aboutus-content-img-item {
+                margin-bottom: 15px;
+            }
+
+        }
+   }
+   
+    #shipping{
+        display: block;
+       & .shipping-item-holder{
+            font-size: 1.5rem;
+            text-align: center;
+
+        }
+       & .shipping-item {
+            &:first-child{
+                padding: 1px 1px 0 1px;
+            }
+            &:last-child{
+                padding: 0 1px 1px 1px;
+            }
+           
+        }
+    }
+  
+    #footer {
+        & .footer-top{
+            display: block;
+            &-column{
+                margin: 0 30px;  
+            }
+        }
+    }
+
+  }
+  @include phone{
+    #sliders .slider-cheir:nth-child(2){
+        display: none;
+        
+     }
+     .shipping-item {
+        padding: 1px;
+    }
+   
+ }
+
+ 
