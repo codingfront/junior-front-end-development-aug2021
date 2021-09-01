@@ -1,0 +1,43 @@
+@import "./variables";
+/*footer */
+#footer{
+    .holder{
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    .footer_links {
+        width: 25%;
+        text-align: left;
+        padding: 10px 20px;
+        nav ul li {
+            padding: 10px 0;
+            text-align: left;
+
+        }
+    }
+}
+/*socail media*/
+
+#social-media {
+    background-color: $light-color;
+    padding: 30px 0;
+    .social-media_item {
+        a {
+            float: left;
+            overflow: hidden;
+            padding: 20px 15px;
+        }
+        img {
+            width: 35px;
+            height: auto;
+        }
+    }
+    .copyright {
+        padding: 20px;
+        width: 100%;
+        color: $primary-color;
+        .p{
+            padding: 0;
+        }
+    }
+}

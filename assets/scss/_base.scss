@@ -1,0 +1,196 @@
+// default fonts
+.secondary-font {
+    font-family: $secondary_font;
+}
+.primary-font {
+    font-family: $primary_font;
+}
+.bold {
+    font-weight: bold;
+} 
+// text-align
+@each $align in $aligns {
+    .text-#{$align}{
+        text-align: $align;
+    }
+}
+// type of positions 
+.position{
+    &-relative{
+        position: relative;
+    }
+    &-absolute{
+        position: absolute;
+    }
+}
+//  default width 
+.w{
+  &-100{
+    width: 100%;
+  }
+  &-50{
+    width: 50%
+  }
+  &-25{
+    width: 25%;
+  }  
+}
+// just default margin
+.m{
+    &t-50{
+        margin-top: 50px;
+    }
+    &b-50{
+        margin-top: 50px;
+    }
+}
+@each $item in $display {
+    .d-#{$item}{
+        display: $item;
+    }
+}
+// just flex box code
+.flex{
+    &-nowrap{
+        flex-wrap:nowrap
+    }
+    &-wrap{
+        flex-wrap:wrap;
+    }
+    &-column{
+        flex-direction: column;
+        &-reverse{
+            flex-direction: column-reverse;
+        }
+    }
+    &-row{
+        flex-direction: row;
+        &-reverse{
+            flex-direction: row-reverse;
+        }
+    }
+}
+@each $align in $justifys {
+    .justify-content-#{$align}{
+        justify-content: $align;
+    }
+}
+// section-title 
+.section-title {
+    position: relative;
+    text-align: center;
+    padding: 75px 0 30px;
+    &:after {
+        @include background-image(
+        "../../assets/images/icons/broken-line.svg",
+        contain,
+        center,
+        no-repeat
+        );
+        @include translateX(-50%);
+        content: "";
+        width: 100%;
+        position: absolute;
+        height: 60px;
+        top: 15px;
+        left: 50%;
+    }
+}
+// for rating star
+.nav-star{
+    margin-top: 7px;
+    a.link{
+        padding:0 2px;
+        svg {
+            width: 16px;
+            fill: $star_fill_color;
+            stroke: $star_strok_color;
+           @include transition(all,0.3 ,ease);
+        }
+        &:hover {
+            svg {
+            fill: $star_strok_color;
+            stroke: none;
+            }
+            &~a svg {
+                fill: $star_strok_color;
+                stroke: $star_strok_color;
+            } 
+        }
+    }
+} 
+// animations
+@keyframes hoverButtons {
+    from {
+        background-position: -190px;
+    }
+    to {
+          background-position: 0;
+    }
+  }
+  @keyframes onHoverButtons {
+    from {
+        background-position: 0;
+        @include background-image("../images/delphinus/button.png",
+        cover,
+        0
+        );
+    }
+    to {
+        background-position: -180px;
+    }
+  }
+.slide-btn {
+    background: transparent;
+    padding: 0.85em 0.75em;
+    margin: 1rem;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    @include transition(color,0.5s);
+        &::after {
+            content: "";
+            background: $white;
+            position: absolute;
+            z-index: -1;
+            display: block;
+            transition: all 1s;
+        }
+        &.slide_from {
+            &_left::after{
+                top: 0;
+                bottom: 0;
+                left: -100%;
+                right: 100%;
+            }
+            &_right::after{
+                top: 0;
+                bottom: 0;
+                left: 100%;
+                right: -100%;
+            }
+            &_top::after {
+                left: 0;
+                right: 0;
+                top: -100%;
+                bottom: 100%;
+            }
+            &_bottom::after {
+                left: 0;
+                right: 0; 
+                top: 100%;
+                bottom: -100%;
+            }
+        }
+        &:hover{
+            &::after {
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                transition: all 1s; 
+            }
+        }
+    }
+
+  

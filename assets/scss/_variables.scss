@@ -1,0 +1,26 @@
+$primary-color: rgb(148, 148, 148);
+$light-color: #eee;
+$white: #fff;
+$black: #000;
+$gray: rgb(70, 70, 70);
+$gray-icon-color: #555;
+$star_strok_color: rgb(0, 220, 220);
+$star_fill_color: rgb(255,255,255);
+$container_width: 1024px;
+$primary-font:'karla', 'snas-serif';
+$secondary-font:'roboto-slab', 'snas-serif';
+$html-font-size:14px;
+
+// $media-breakpoints
+    $big-screen-breakpoint:1140px;
+    $desktop-breakpoint:1024px;
+    $laptop-breakpoint:992px;
+    $ipad-breakpoint:960px;
+    $medium-breakpoint:830px;
+    $tablet-breakpoint:768px;
+    $mobile-breakpoint:578px;
+    $small-breakpoint:491px;
+// 
+$display:block,inline,flex,grid,inline-block,none;
+$aligns: right, center, left;
+$justifys:right,center,left,space-around,space-between,end,start,flex-end,flex-start;

@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="a Website for happie " />
+    <meta name="keywords" content="Front-End Bootcamp,Delphinus">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Flex Delphinus</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/solid.min.css" />
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/fontawesome.min.css" />
+</head>
+
+<body>
+    <header id="header" class="position-relative d-flex flex-column">
+        <div class="header_topbar">
+            <ul>
+                <li class="topbar_link">
+                    <a href="#header">
+                        <span class="tobbar_link-label bold">LOGIN</span>
+                    </a>
+                </li>
+                <li class="topbar_link">
+                    <a href="#header">
+                        <span class="tobbar_link-label bold">WISHLIST</span>
+                        <span class="wishlist_number"> 0</span>
+                    </a>
+                </li>
+                <li class="topbar_link">
+                    <a href="#header">
+                        <span class="tobbar_link-label bold">MY CART</span>
+                        <span class="cart_number"> 0 </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="header_bottombar d-flex justify-content-space-between">
+            <div class="header_bottombar-left-area position-relative">
+                <a href="#header">
+                    <img src="./assets/images/delphinus/logo.png" alt="delphinus logo">
+                </a>
+            </div>
+            <div class="header_bottombar-center-area">
+                <nav>
+                    <ul class="d-flex justify-content-center">
+                        <li><a href="#" class="active"> HOME </a></li>
+                        <li><a href="#"> SHOP STYLES </a></li>
+                        <li><a href="#"> PAGE </a></li>
+                        <li><a href="#"> ELEMENTS </a></li>
+                        <li><a href="#"> FEATURES </a></li>
+                        <li><a href="#"> LOGIN </a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header_bottombar-right-area position-relative">
+                <a href="header">
+                    <img src="./assets/images/icons/search.jpg" alt="Search icon">
+                </a>
+            </div>
+        </div>
+    </header>
+    <header id="mobile-header">
+        <div class="container">
+            <div class="container-holder">
+                <div class="mobile-header__responsive position-relative d-flex justify-content-space-between">
+                    <div class="mobile-header__left-side">
+                        <ul class="icon-left-section">
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-user"></i>
+                                </a>
+                            </li>
+                            <li class="basket">
+                                <a class="position-relative" href="#">
+                                    <i class="fas fa-bell"></i>
+                                    <span>1</span>
+                                </a>
+
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mobile-header__logo">
+                        <img src="./assets/images/delphinus/logo.png" alt="delphinus logo">
+                    </div>
+                    <div class="mobile-header__right-side">
+                        <ul class="icon-right-section">
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-search"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-bars"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="position-relative">
+        <div class="gray-background"></div>
+    </div>
+    <section id="chair-section">
+        <div class="container">
+            <div class="position-relative">
+                <div class="chairParent d-flex flex-wrap justify-content-space-around text-center">
+                    <div class="chair">
+                        <img src="./assets/images/delphinus/chair-2.png" alt="rest chair">
+                        <h3 class="title secondary-font">Frame & Rest</h3>
+                        <span class="price"> $20 </span>
+                        <div class="nav-star d-flex flex-row-reverse justify-content-center">
+                            <a class="link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                                </svg>
+                            </a>
+                            <a class="link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                                </svg>
+                            </a>
+                            <a class="link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                                </svg>
+                            </a>
+                            <a class="link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                                </svg>
+                            </a>
+                            <a class="link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="chair">
+                        <img src="./assets/images/delphinus/chair-1.png" alt="dao chair">
+                        <h3 class="title secondary-font">Dao Chair</h3>
+                        <span class="price"> $20 </span>
+                        <span class="nav-star">&nbsp;</span>
+                    </div>
+                    <div class="chair">
+                        <img src="./assets/images/delphinus/chair-3.png" alt="hiro chair">
+                        <h3 class="title secondary-font">Hiro Chair</h3>
+                        <span class="price"> $20 </span>
+                        <div class="nav-star d-flex flex-row-reverse justify-content-center">
+                            <a class="link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                                </svg>
+                            </a>
+                            <a class="link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                                </svg>
+                            </a>
+                            <a class="link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                                </svg>
+                            </a>
+                            <a class="link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                                </svg>
+                            </a>
+                            <a class="link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrows">
+                    <div class="arrows_left">
+                        <i class="fas fa-angle-left icon"></i>
+                    </div>
+                    <div class="arrows_right">
+                        <i class="fas fa-angle-right icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="rooms" class="position-relative">
+        <div class="d-flex flex-wrap justify-content-center text-center">
+            <div class="rooms_category position-relative">
+                <img class="d-block" src="./assets/images/delphinus/room-category-1.jpg" alt="bed room">
+                <div class="rooms_category-name secondary-font">
+                    <h3>BED ROOM</h3>
+                    <a href="#rooms" class="slide-btn slide_from_left shop-btn">SHOP NOW</a>
+                </div>
+            </div>
+            <div class="rooms_category position-relative">
+                <img class="d-block" src="./assets/images/delphinus/room-category-2.jpg" alt="dinning room">
+                <div class="rooms_category-name secondary-font">
+                    <h3>DINNING ROOM</h3>
+                    <a href="#rooms" class="slide-btn slide_from_bottom shop-btn">SHOP NOW</a>
+                </div>
+            </div>
+            <div class="rooms_category position-relative">
+                <img class="d-block" src="./assets/images/delphinus/room-category-3.jpg" alt="kitchen room">
+                <div class="rooms_category-name secondary-font">
+                    <h3>KITCHEN ROOM</h3>
+                    <a href="#rooms" class="slide-btn slide_from_right shop-btn">SHOP NOW</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="features">
+        <div class="container">
+            <div class="container-holder">
+                <div>
+                    <section class="section-title">
+                        <h2>PRODUCT FEATURES</h2>
+                        <span><a href="#"> see all</a></span>
+                    </section>
+
+                    <div class="features_products">
+                        <div class="features_product-item">
+                            <div class="product-thumbnail">
+                                <a href="#features"><img src="./assets/images/delphinus/shelf.jpg"
+                                        alt="shelf features"></a>
+                            </div>
+                            <div class="product-description">
+                                <div class="product-holder">
+                                    <h3 class="product-title">Afteroom bench</h3>
+                                    <div class="product-price"><span class="product-off">20$</span> <span>18$</span>
+                                    </div>
+                                    <div class="nav-star d-flex flex-row-reverse justify-content-flex-end">
+                                        <a class="link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                                            </svg>
+                                        </a>
+                                        <a class="link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                                            </svg>
+                                        </a>
+                                        <a class="link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                                            </svg>
+                                        </a>
+                                        <a class="link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                                            </svg>
+                                        </a>
+                                        <a class="link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="features_product-item">
+                            <div class="product-thumbnail">
+                                <a href="#features"><img src="./assets/images/delphinus/desk.jpg"
+                                        alt="desk features"></a>
+                            </div>
+                            <div class="product-description">
+                                <div class="product-holder">
+                                    <h3 class="product-title">Afteroom bench</h3>
+                                    <div class="product-price"><span class="product-off">20$</span> <span>18$</span>
+                                    </div>
+                                    <div class="nav-star d-flex flex-row-reverse justify-content-flex-end">
+                                        <a class="link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                                            </svg>
+                                        </a>
+                                        <a class="link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                                            </svg>
+                                        </a>
+                                        <a class="link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                                            </svg>
+                                        </a>
+                                        <a class="link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                                            </svg>
+                                        </a>
+                                        <a class="link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="features_product-item">
+                            <div class="product-thumbnail">
+                                <a href="#features"><img src="./assets/images/delphinus/Armchair.jpg"
+                                        alt="Armchair features"></a>
+                            </div>
+                            <div class="product-description">
+                                <div class="product-holder">
+                                    <h3 class="product-title">Afteroom bench</h3>
+                                    <div class="product-price"><span class="product-off">20$</span> <span>18$</span>
+                                    </div>
+                                    <div class="nav-star d-flex flex-row-reverse justify-content-flex-end">
+                                        <a class="link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                                            </svg>
+                                        </a>
+                                        <a class="link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                                            </svg>
+                                        </a>
+                                        <a class="link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                                            </svg>
+                                        </a>
+                                        <a class="link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                                            </svg>
+                                        </a>
+                                        <a class="link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="features_product-item">
+                            <div class="product-thumbnail">
+                                <a href="#features"><img src="./assets/images/delphinus/fliparoundmain.jpg"
+                                        alt="features"></a>
+                            </div>
+                            <div class="product-description">
+                                <div class="product-holder">
+                                    <h3 class="product-title">Afteroom bench</h3>
+                                    <div class="product-price"><span class="product-off">20$</span> <span>18$</span>
+                                    </div>
+                                    <div class="nav-star d-flex flex-row-reverse justify-content-flex-end">
+                                        <a class="link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                                            </svg>
+                                        </a>
+                                        <a class="link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                                            </svg>
+                                        </a>
+                                        <a class="link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                                            </svg>
+                                        </a>
+                                        <a class="link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                                            </svg>
+                                        </a>
+                                        <a class="link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="features_product-item">
+                            <div class="product-thumbnail">
+                                <a href="#features"><img src="./assets/images/delphinus/product-gold-motif-vase.jpg"
+                                        alt="features"></a>
+                            </div>
+                            <div class="product-description">
+                                <div class="product-holder">
+                                    <h3 class="product-title">Afteroom bench</h3>
+                                    <div class="product-price"><span class="product-off">20$</span> <span>18$</span>
+                                    </div>
+                                    <div class="nav-star d-flex flex-row-reverse justify-content-flex-end">
+                                        <a class="link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                                            </svg>
+                                        </a>
+                                        <a class="link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                                            </svg>
+                                        </a>
+                                        <a class="link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                                            </svg>
+                                        </a>
+                                        <a class="link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                                            </svg>
+                                        </a>
+                                        <a class="link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="features_product-item">
+                            <div class="product-thumbnail">
+                                <a href="#features"><img src="./assets/images/delphinus/product-lighthouse-lantern.jpg"
+                                        alt="features"></a>
+                            </div>
+                            <div class="product-description">
+                                <div class="product-holder">
+                                    <h3 class="product-title">Afteroom bench</h3>
+                                    <div class="product-price"><span class="product-off">20$</span> <span>18$</span>
+                                    </div>
+
+                                    <div class="nav-star d-flex flex-row-reverse justify-content-flex-end">
+                                        <a class="link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                                            </svg>
+                                        </a>
+                                        <a class="link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                                            </svg>
+                                        </a>
+                                        <a class="link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                                            </svg>
+                                        </a>
+                                        <a class="link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                                            </svg>
+                                        </a>
+                                        <a class="link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="features_product-item">
+                            <div class="product-thumbnail">
+                                <a href="#features"><img src="./assets/images/delphinus/product-wood-tray-2.jpg"
+                                        alt="features"></a>
+                            </div>
+                            <div class="product-description">
+                                <div class="product-holder">
+                                    <h3 class="product-title">Afteroom bench</h3>
+                                    <div class="product-price"><span class="product-off">20$</span> <span>18$</span>
+                                    </div>
+
+                                    <div class="nav-star d-flex flex-row-reverse justify-content-flex-end">
+                                        <a class="link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                                            </svg>
+                                        </a>
+                                        <a class="link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                                            </svg>
+                                        </a>
+                                        <a class="link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                                            </svg>
+                                        </a>
+                                        <a class="link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                                            </svg>
+                                        </a>
+                                        <a class="link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="features_product-item">
+                            <div class="product-thumbnail">
+                                <a href="#features"><img src="./assets/images/delphinus/product-thermo-flask.jpg"
+                                        alt="features"></a>
+                            </div>
+                            <div class="product-description">
+                                <div class="product-holder">
+                                    <h3 class="product-title">Afteroom bench</h3>
+                                    <div class="product-price"><span class="product-off">20$</span> <span>18$</span>
+                                    </div>
+                                    <div class="nav-star d-flex flex-row-reverse justify-content-flex-end">
+                                        <a class="link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                                            </svg>
+                                        </a>
+                                        <a class="link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                                            </svg>
+                                        </a>
+                                        <a class="link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                                            </svg>
+                                        </a>
+                                        <a class="link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                                            </svg>
+                                        </a>
+                                        <a class="link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="features_product-item">
+                            <div class="product-thumbnail">
+                                <a href="#features"><img src="./assets/images/delphinus/Chair01.png" alt="features"></a>
+                            </div>
+                            <div class="product-description">
+                                <div class="product-holder">
+                                    <h3 class="product-title">Afteroom bench</h3>
+                                    <div class="product-price"><span class="product-off">20$</span> <span>18$</span>
+                                    </div>
+                                    <div class="nav-star d-flex flex-row-reverse justify-content-flex-end">
+                                        <a class="link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                                            </svg>
+                                        </a>
+                                        <a class="link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                                            </svg>
+                                        </a>
+                                        <a class="link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                                            </svg>
+                                        </a>
+                                        <a class="link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                                            </svg>
+                                        </a>
+                                        <a class="link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- features -->
+    <section id="latest" class="position-relative mt-50">
+        <section class="section-title">
+            <h2>LATEST PRODUCT</h2>
+            <span><a href="#"> see all</a></span>
+        </section>
+        <div class="latest_gallery d-flex justify-content-center flex-wrap">
+            <div class="latest_gallery-item position-relative">
+                <a href="#latest">
+                    <img src="./assets/images/delphinus/gallery-1.jpg">
+                </a>
+            </div>
+            <div class="latest_gallery-item position-relative">
+                <a href="#latest">
+                    <img src="./assets/images/delphinus/gallery-2.jpg">
+                </a>
+            </div>
+            <div class="latest_gallery-item position-relative">
+                <a href="#latest">
+                    <img src="./assets/images/delphinus/gallery-3.jpg">
+                </a>
+            </div>
+            <div class="latest_gallery-item position-relative">
+                <a href="#latest">
+                    <img src="./assets/images/delphinus/gallery-4.jpg">
+                </a>
+            </div>
+            <div class="latest_gallery-item position-relative">
+                <a href="#latest">
+                    <img src="./assets/images/delphinus/gallery-5.jpg">
+                </a>
+            </div>
+            <div class="latest_gallery-item position-relative">
+                <a href="#latest">
+                    <img src="./assets/images/delphinus/gallery-6.jpg">
+                </a>
+            </div>
+            <div class="latest_gallery-item position-relative">
+                <a href="#latest">
+                    <img src="./assets/images/delphinus/gallery-7.jpg">
+                </a>
+            </div>
+            <div class="latest_gallery-item position-relative">
+                <a href="#latest">
+                    <img src="./assets/images/delphinus/gallery-8.jpg">
+                </a>
+            </div>
+        </div>
+
+    </section>
+    <!-- aboutUS -->
+    <section id="aboutUs" class="position-relative">
+        <div class="container padding-x-0">
+            <section class="section-title">
+                <h2>ABOUT US</h2>
+                <span><a href="#"> see all</a></span>
+            </section>
+            <div class="aboutUs_rows">
+                <div class="aboutUs_rows-delphinus d-flex flex-wrap">
+                    <div class="about-delphinus">
+                        <div class="about-delphinus-holder">
+                            <div class="about-delphinus-background">
+                                <div class="about-delphinus-spacing">
+                                    <h3 class="secondary-font bold"> WE ARE DELPHINUS</h3>
+                                    <p class="about-delphinus-description">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam aliquet
+                                        turpis in
+                                        cursus. Maecenas suscipit molestie porta. Aliquam et cursus lectus. Vestibulum
+                                        sit
+                                        amet
+                                        nulla nec mauris condimentum porttitor et nec tellus. Morbi fermentum dui quis
+                                        dolor
+                                        sollicitudin, vitae sodales sapien molfermsuada fames ac turpis egestas.
+
+                                    </p>
+                                    <p>Monday to Friday, 11 am – 6 pm</p>
+                                    <p>Saturday, 11 am – 4 pm</p>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="news-letter text-center">
+                        <div class="about-delphinus-holder">
+                            <div class="news-letter-spacing">
+                                <h3>NEWSLETETTER</h3>
+                                <p class="news-letter-desc">Sign up to get the latest on sales, new releases and more
+                                    ...</p>
+                                <div class="news-letter-form-holder">
+                                    <form class="position-relative" name="newsletter">
+                                        <input type="email" value="" placeholder="enter your email">
+                                        <button type="submit"><i class="fas fa-long-arrow-right"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="aboutUs_rows-images d-flex justify-content-space-around flex-wrap">
+                    <div class="aboutUs_rows-images-item">
+                        <div class="aboutUs_rows-images-item-holder">
+                            <img src="./assets/images/delphinus/room-1.jpg">
+                        </div>
+                    </div>
+                    <div class="aboutUs_rows-images-item">
+                        <div class="aboutUs_rows-images-item-holder">
+                            <img src="./assets/images/delphinus/room-2.jpg">
+                        </div>
+                    </div>
+                    <div class="aboutUs_rows-images-item">
+                        <div class="aboutUs_rows-images-item-holder">
+                            <img src="./assets/images/delphinus/room-3.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="aboutUs_rows-brands">
+                    <div class="aboutUs_rows-brands-holder">
+                        <div class="d-flex justify-content-space-around flex-wrap">
+                            <div class="aboutUs_rows-brands-item">
+                                <img src="./assets/images/delphinus/brand-02.png" alt="brand">
+                            </div>
+                            <div class="aboutUs_rows-brands-item"> <img src="./assets/images/delphinus/brand-04.png"
+                                    alt="brand">
+                            </div>
+                            <div class="aboutUs_rows-brands-item"> <img src="./assets/images/delphinus/brand-04.png"
+                                    alt="brand">
+                            </div>
+                            <div class="aboutUs_rows-brands-item"> <img src="./assets/images/delphinus/brand-05.png"
+                                    alt="brand">
+                            </div>
+                            <div class="aboutUs_rows-brands-item"> <img src="./assets/images/delphinus/brand-06.png"
+                                    alt="brand">
+                            </div>
+                            <div class="aboutUs_rows-brands-item"> <img src="./assets/images/delphinus/brand-04.png"
+                                    alt="brand">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="free-shipping">
+        <div class="container">
+            <div class="container-holder">
+                <div class="free-shipping-box d-flex flex-wrap justify-content-center secondary-font text-center">
+                    <div class="free-shipping-box-item ">
+                        <h3>FREE SHIPPING</a>
+                    </div>
+                    <div class="free-shipping-box-item ">
+                        <h3>FREE SHIPPING</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="container">
+            <div class="holder d-flex flex-wrap justify-content-start">
+                <div class="footer_links">
+                    <nav>
+                        <h3 class="secondary-font">INFORMATION</h3>
+                        <ul>
+                            <li> <a href="#footer"> About US </a> </li>
+                            <li> <a href="#footer"> Contact US</a> </li>
+                            <li> <a href="#footer"> Blog</a> </li>
+                            <li> <a href="#footer"> Store </a> </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer_links">
+                    <nav>
+                        <h3 class="secondary-font">COLLECTION</h3>
+                        <ul>
+                            <li> <a href="#footer"> Living room </a> </li>
+                            <li> <a href="#footer"> Bath room</a> </li>
+                            <li> <a href="#footer"> Kitchen room</a> </li>
+                            <li> <a href="#footer"> Bed room </a> </li>
+                            <li> <a href="#footer"> Garden </a> </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer_links">
+                    <nav>
+                        <h3 class="secondary-font">EXTRAS</h3>
+                        <ul>
+                            <li> <a href="#footer"> Brands </a> </li>
+                            <li> <a href="#footer"> Git Vouchers </a> </li>
+                            <li> <a href="#footer"> Affiliates</a> </li>
+                            <li> <a href="#footer"> Specials </a> </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer_links">
+                    <nav>
+                        <h3 class="secondary-font">MY ACCOUNT</h3>
+                        <ul>
+                            <li> <a href="#footer">My Account </a> </li>
+                            <li> <a href="#footer">Older History</a> </li>
+                            <li> <a href="#footer">Wish List</a> </li>
+                            <li> <a href="#footer">News Letter </a> </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <section id="social-media">
+        <div class="container text-center">
+            <ul class="social-media-holder d-flex justify-content-center flex-wrap">
+                <li class="social-media_item">
+                    <a href="#social-media"> <i class="fas fa-facebook-f"></i></a>
+                </li>
+                <li class="social-media_item">
+                    <a href="#social-media"> <i class="fas fa-twitter"></i></a>
+                </li>
+                <li class="social-media_item">
+                    <a href="#social-media"> <i class="fas fa-instagram"></i></a>
+                </li>
+                <li class="social-media_item">
+                    <a href="#social-media"> <i class="fas fa-linkedin"></i></a>
+                </li>
+            </ul>
+            <div class="copyright">
+                <p class="text-center primary-font">@2016 Delphinus</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

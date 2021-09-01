@@ -1,0 +1,8 @@
+@import './variables';
+.container {
+    margin: 0 auto;
+    width: $container_width;
+    &-holder {
+        padding: 0 15px;
+    }
+}

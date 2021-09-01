@@ -1,0 +1,163 @@
+@import './variables';
+/*breakpint size variables*/
+    @include media-screen($big-screen-breakpoint) {
+        .container{
+            width:100%;
+        }
+    }
+// 1024
+    @include media-screen($desktop-breakpoint) {
+        #aboutUs{
+            .about-delphinus {
+                width: 66.66%;
+            }
+            .news-letter {
+                width: 33.33%;
+            }
+        }
+    }
+    @include media-screen($laptop-breakpoint) {
+        header#header{
+            display: none;
+        }
+        header#mobile-header{
+            display: block;
+        }
+    }
+    @include media-screen($ipad-breakpoint) {
+        #aboutUs{ 
+            .news-letter {
+                &-spacing {
+                    padding: 30px;
+                }
+            }
+        }
+    }
+    @include media-screen($medium-breakpoint) {
+        #aboutUs{
+            .news-letter,.about-delphinus {
+                width: 100%;
+            }
+            .news-letter{
+                margin-top:1rem;
+            }
+        }
+    }
+    @include media-screen($tablet-breakpoint) {
+        #chair-section{
+            .chairParent .chair{
+                display: block;
+                .title {
+                    font-size: 1.1rem;
+                }
+                img {
+                    max-width: 180px;
+                }
+                .stars {
+                    svg {
+                        max-width: 17px;
+                    }
+                }
+            }
+        }
+        #rooms{
+            .rooms_category {
+                width: 100%;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+                &-name {
+                    padding: 5px 0;
+                }
+            }
+        }
+        #aboutUs{
+            .aboutUs_rows-delphinus,
+            .aboutUs_rows-images {
+                text-align: center;
+                margin-top: 1rem;
+            }
+            .aboutUs_rows-images{
+                &-item {
+                    width: 100%;
+                        &-holder{
+                        padding-top: 3px;
+                        padding-bottom: 3px;
+                    }
+                }
+            }
+            .aboutUs_rows-brands{
+                &-holder {
+                    padding: 0;
+                    .aboutUs_rows-brands-item {
+                        width: 33.33%;
+                    }
+                }
+            }
+        }
+        #features{
+            .features_products {
+                .features_product-item {
+                    width: 50%;
+                }
+            }
+        }
+        #latest{
+            margin-top: 0;
+            .latest_gallery{
+                &-item {
+                 width: 50%;
+                }
+            }
+        }
+        #free-shipping {
+            .free-shipping-box-item {
+                width: 100%;
+                h3{
+                    margin:10px 0 !important;
+                    font-size: 1.3rem;
+                }
+            }
+        }
+        #footer .footer_links {
+            width: 50%;
+        }
+    }
+    @include media-screen($mobile-breakpoint) {
+        #features{
+            .features_products {
+                .features_product-item {
+                    width: 100%;
+                }
+            }
+        }
+        #aboutUs{
+            .aboutUs_rows-brands{
+                &-holder {
+                    .aboutUs_rows-brands-item {
+                        width: 50%;
+                    }
+                }
+            }
+        }
+        #chair-section{
+            .chairParent .chair:first-child{
+                display: none;
+            }
+        }
+    }
+    @include media-screen($small-breakpoint) {
+        #chair-section{
+            .chairParent .chair:nth-child(2){
+                    display: none;
+                }
+            }
+        #latest{
+            .latest_gallery{
+                &-item {
+                 width: 100%;
+                }
+            }
+        }
+    }

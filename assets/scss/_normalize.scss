@@ -1,0 +1,38 @@
+@import "./variables";
+* {
+    box-sizing: border-box;
+    &::before,&::after{
+        @extend *;
+    }
+}
+html { 
+    font-size: $html-font-size;
+    overflow-x: hidden;
+}
+body {
+    margin: 0;
+    font-family: $primary_font;
+}
+a{
+    text-decoration: none;
+    color: $primary-color;
+    display:block;
+    &:hover{
+        color: $black;
+    }
+}
+p {
+    margin: 0;
+}
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+i{
+    font-style:normal;
+}
+h1,h2,h3,h4,h5,h6{
+    margin-top: 0;
+    margin-bottom: 0; 
+}

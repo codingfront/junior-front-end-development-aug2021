@@ -1,0 +1,43 @@
+@mixin transition($element:all , $time , $form:ease-in) {
+    transition: $element $time $form;
+}
+@mixin scale($x,$y) {
+    transform: scale($x,$y);
+}
+@mixin rotateY($deg) {
+    transform:rotateY($deg);
+}
+@mixin translate($x ,$y){
+    transform: translate($x, $y);
+}
+@mixin translateX($x){ 
+    transform: translateX($x);
+}
+@mixin translateY($y){  
+    transform: translateY($y);
+}
+@mixin  background-image($url,$size:cover,$position:center,$repeat:no-repeat) {
+        background-image: url($url);
+        background-size: $size;
+        background-position:$position;
+        background-repeat: $repeat;
+}
+//  for responsive
+@mixin media-screen($width) {
+    @media only screen and (max-width: $width) {
+      @content;
+    }
+  }
+  @mixin keyframes($name) {
+    @-webkit-keyframes #{$name} {
+      @content;
+    }
+  
+    @-moz-keyframes #{$name} {
+      @content;
+    }
+  
+    @keyframes #{$name} {
+      @content;
+    }
+  }

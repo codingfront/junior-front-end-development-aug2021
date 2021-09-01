@@ -1,0 +1,7 @@
+@use "sass:math";
+@import './variables';
+
+@function rem($size) {
+    $rem: math.div($size,$html-font-size)+rem;
+    @return $rem;
+  }
