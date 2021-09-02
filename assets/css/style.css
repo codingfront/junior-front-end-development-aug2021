@@ -637,12 +637,11 @@ header#mobile-header .mobile-header__responsive .mobile-header__logo img {
   border: solid 2px #ddd;
 }
 #aboutUs .news-letter-spacing p.news-letter-desc {
-  margin-top: 15px;
+  margin: 15px 0;
 }
 #aboutUs .news-letter form input {
   padding: 10px 20px;
   border: solid 2px #ddd;
-  margin: 30px 0;
   width: 100%;
 }
 #aboutUs .news-letter form button[type=submit] {
