@@ -30,11 +30,11 @@
   font-weight: 300;
 }
 .secondary-font {
-  font-family: "roboto-slab", "snas-serif";
+  font-family: "roboto-slab", "sans-serif";
 }
 
 .primary-font {
-  font-family: "karla", "snas-serif";
+  font-family: "karla", "sans-serif";
 }
 
 .bold {
@@ -162,10 +162,8 @@
   padding: 75px 0 30px;
 }
 .section-title:after {
-  background-image: url("../../assets/images/icons/broken-line.svg");
+  background: url("../../assets/images/icons/broken-line.svg") no-repeat center;
   background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
   transform: translateX(-50%);
   content: "";
   width: 100%;
@@ -183,9 +181,9 @@
 }
 .nav-star a.link svg {
   width: 16px;
-  fill: white;
+  fill: #fff;
   stroke: #00dcdc;
-  transition: all 0.3 ease;
+  transition: fill 0.3s ease;
 }
 .nav-star a.link:hover svg {
   fill: #00dcdc;
@@ -193,50 +191,9 @@
 }
 .nav-star a.link:hover ~ a svg {
   fill: #00dcdc;
-  stroke: #00dcdc;
+  stroke: none;
 }
 
-@-webkit-keyframes hoverButtons {
-  from {
-    background-position: -190px;
-  }
-  to {
-    background-position: 0;
-  }
-}
-
-@keyframes hoverButtons {
-  from {
-    background-position: -190px;
-  }
-  to {
-    background-position: 0;
-  }
-}
-@-webkit-keyframes onHoverButtons {
-  from {
-    background-position: 0;
-    background-image: url("../images/delphinus/button.png");
-    background-size: cover;
-    background-position: 0;
-    background-repeat: no-repeat;
-  }
-  to {
-    background-position: -180px;
-  }
-}
-@keyframes onHoverButtons {
-  from {
-    background-position: 0;
-    background-image: url("../images/delphinus/button.png");
-    background-size: cover;
-    background-position: 0;
-    background-repeat: no-repeat;
-  }
-  to {
-    background-position: -180px;
-  }
-}
 .slide-btn {
   background: transparent;
   padding: 0.85em 0.75em;
@@ -244,7 +201,7 @@
   position: relative;
   z-index: 1;
   overflow: hidden;
-  transition: color 0.5s ease-in;
+  transition: color 1s ease;
 }
 .slide-btn::after {
   content: "";
@@ -252,7 +209,7 @@
   position: absolute;
   z-index: -1;
   display: block;
-  transition: all 1s;
+  transition: all 1s ease;
 }
 .slide-btn.slide_from_left::after {
   top: 0;
@@ -283,7 +240,6 @@
   right: 0;
   top: 0;
   bottom: 0;
-  transition: all 1s;
 }
 
 .container {
@@ -304,7 +260,7 @@ html {
 
 body {
   margin: 0;
-  font-family: "karla", "snas-serif";
+  font-family: "karla", "sans-serif";
 }
 
 a {
@@ -339,22 +295,22 @@ header#header {
   background-color: #fff;
 }
 header#header .header_topbar {
-  border-bottom: solid 1px #dddddd;
+  border-bottom: solid 1px #ddd;
 }
 header#header .header_topbar ul {
   margin: 0;
   text-align: right;
 }
 header#header .header_topbar ul li {
-  padding: 0.7142857143rem;
-  border-left: solid 1px #dddddd;
+  padding: 1.3rem 1.7rem;
+  border-left: solid 1px #ddd;
   display: inline-block;
 }
 header#header .header_topbar ul li:last-child {
   padding-right: 5px;
 }
 header#header .header_topbar ul li a .tobbar_link-label {
-  color: #c9c9c9;
+  color: #949494;
 }
 header#header .header_topbar ul li a .tobbar_link-label:hover {
   color: #000;
@@ -372,12 +328,10 @@ header#header .header_bottombar-center-area {
   text-align: center;
 }
 header#header .header_bottombar-center-area ul li a {
-  padding: 20px 10px;
+  padding: 20px;
+  font-weight: bold;
 }
-header#header .header_bottombar-center-area ul li a:hover {
-  color: #000;
-}
-header#header .header_bottombar-center-area ul li .active {
+header#header .header_bottombar-center-area ul li a.active {
   color: #000;
 }
 header#header .header_bottombar-right-area {
@@ -388,7 +342,7 @@ header#header .cart_number {
 }
 header#header .wishlist_number,
 header#header .cart_number {
-  background: #e7e7e7;
+  background: #e8e8e8;
   color: #000;
   padding: 5px 15px;
   margin: 0 10px;
@@ -415,7 +369,7 @@ header#mobile-header .mobile-header__responsive ul.icon-left-section li.basket s
   position: absolute;
   right: -10px;
   top: -10px;
-  background: red;
+  background: #ff0000;
   color: #fff;
   border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -478,7 +432,10 @@ header#mobile-header .mobile-header__responsive .mobile-header__logo img {
 }
 #chair-section .arrows i.icon {
   font-size: 1.4rem;
-  color: #555;
+  color: #949494;
+}
+#chair-section .arrows i.icon:hover {
+  color: #000;
 }
 #chair-section .arrows_left, #chair-section .arrows_right {
   top: 45%;
@@ -537,10 +494,10 @@ header#mobile-header .mobile-header__responsive .mobile-header__logo img {
   left: 0;
   background-color: #000;
   opacity: 0.4;
-  transition: background-color 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 #rooms .rooms_category:hover::after {
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 /*features*/
@@ -562,6 +519,9 @@ header#mobile-header .mobile-header__responsive .mobile-header__logo img {
 #features .features_products .features_product-item .product-description .product-holder {
   padding: 0 10px;
 }
+#features .features_products .features_product-item .product-description .product-holder .product-title {
+  text-transform: capitalize;
+}
 #features .features_products .features_product-item .product-description .product-holder .product-price {
   margin: 10px 0;
 }
@@ -582,7 +542,6 @@ header#mobile-header .mobile-header__responsive .mobile-header__logo img {
 /*latest*/
 #latest .latest_gallery-item {
   width: 25%;
-  position: relative;
   transition: transform 0.4s ease;
 }
 #latest .latest_gallery-item a {
@@ -596,14 +555,6 @@ header#mobile-header .mobile-header__responsive .mobile-header__logo img {
 #latest .latest_gallery-item:hover {
   transform: scale(0.9, 0.9);
 }
-#latest .latest_gallery-item::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  right: 0;
-}
 
 /*about us */
 #aboutUs .about-delphinus-holder {
@@ -613,10 +564,8 @@ header#mobile-header .mobile-header__responsive .mobile-header__logo img {
   width: 66.66%;
 }
 #aboutUs .about-delphinus-background {
-  background-image: url("../../assets/images/delphinus/abou-us-background.jpg");
+  background: url("../../assets/images/delphinus/abou-us-background.jpg") center no-repeat;
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   line-height: 29px;
   color: #fff;
 }
@@ -633,7 +582,7 @@ header#mobile-header .mobile-header__responsive .mobile-header__logo img {
   width: 33.33%;
 }
 #aboutUs .news-letter-spacing {
-  padding: 30px 30px 95px;
+  padding: 30px 30px 136px;
   border: solid 2px #ddd;
 }
 #aboutUs .news-letter-spacing p.news-letter-desc {
@@ -649,7 +598,7 @@ header#mobile-header .mobile-header__responsive .mobile-header__logo img {
   right: 13px;
   top: 50%;
   transform: translateY(-50%);
-  color: #555;
+  color: #949494;
   background: none;
   border: none;
 }
@@ -685,7 +634,7 @@ header#mobile-header .mobile-header__responsive .mobile-header__logo img {
 }
 
 #free-shipping {
-  background-color: #eee;
+  background-color: #e8e8e8;
   padding: 80px 0;
 }
 #free-shipping .free-shipping-box-item {
@@ -715,31 +664,32 @@ header#mobile-header .mobile-header__responsive .mobile-header__logo img {
   text-align: left;
   padding: 10px 20px;
 }
+#footer .footer_links nav h3 {
+  margin-bottom: 20px;
+}
 #footer .footer_links nav ul li {
   padding: 10px 0;
   text-align: left;
 }
-
-/*socail media*/
-#social-media {
-  background-color: #eee;
+#footer .footer_links nav ul li a {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+#footer .social-media {
+  background-color: #e8e8e8;
   padding: 30px 0;
 }
-#social-media .social-media_item a {
+#footer .social-media .social-media_item a {
   float: left;
   overflow: hidden;
-  padding: 20px 15px;
+  padding: 15px 30px;
 }
-#social-media .social-media_item img {
-  width: 35px;
-  height: auto;
-}
-#social-media .copyright {
+#footer .social-media .copyright {
   padding: 20px;
   width: 100%;
   color: #949494;
 }
-#social-media .copyright .p {
+#footer .social-media .copyright .p {
   padding: 0;
 }
 
@@ -768,7 +718,7 @@ header#mobile-header .mobile-header__responsive .mobile-header__logo img {
 }
 @media only screen and (max-width: 960px) {
   #aboutUs .news-letter-spacing {
-    padding: 30px;
+    min-height: 322px;
   }
 }
 @media only screen and (max-width: 830px) {
@@ -778,8 +728,16 @@ header#mobile-header .mobile-header__responsive .mobile-header__logo img {
   #aboutUs .news-letter {
     margin-top: 1rem;
   }
+  #aboutUs .news-letter-spacing {
+    min-height: 0;
+    padding-bottom: 30px;
+  }
 }
 @media only screen and (max-width: 768px) {
+  .gray-background:before {
+    height: 145px;
+  }
+
   #chair-section .chairParent .chair {
     display: block;
   }

@@ -1,63 +1,63 @@
 @import './function';
 header#header{
-    background-color: #fff;
-    .header_topbar{
-        border-bottom: solid 1px rgb(221, 221, 221);
-        ul {
-            margin: 0;
-            text-align: right;
-             li {
-                padding: rem(10px);
-                border-left: solid 1px rgb(221, 221, 221);
-                display: inline-block;
-                &:last-child {
-                    padding-right: 5px; 
-                } 
-                a{
-                    .tobbar_link-label {
-                        color: rgb(201, 201, 201);
-                        &:hover{
+    background-color: $white;
+    .header{
+        &_topbar{
+            border-bottom: solid 1px $border-color;
+            ul {
+                margin: 0;
+                text-align: right;
+                 li {
+                    padding:1.3rem 1.7rem;
+                    border-left: solid 1px $border-color;
+                    display: inline-block;
+                    &:last-child {
+                        padding-right: 5px; 
+                    } 
+                    a{
+                        .tobbar_link-label {
+                            color: $primary-color;
+                            &:hover{
+                                color: $link-color-hover;
+                            }
+                        }
+                    }
+                 }
+            }
+        }
+        &_bottombar{
+            padding: 20px 30px;
+            box-shadow: 0 5px 10px 1px rgb(0 0 0 / 5%);
+            &-left-area {
+                width:20%;
+                margin-top: 15px;
+            }
+            &-center-area {
+                width:60%;
+                text-align: center;
+                ul li{
+                    a {
+                        padding: 20px;
+                        font-weight: bold;
+                        &.active {
                             color: $black;
                         }
                     }
                 }
-             }
-        }
-    }
-    .header_bottombar{
-        padding: 20px 30px;
-        box-shadow: 0 5px 10px 1px rgb(0 0 0 / 5%);
-        &-left-area {
-            width:20%;
-            margin-top: 15px;
-        }
-        &-center-area {
-            width:60%;
-            text-align: center;
-            ul li{
-                a {
-                    padding: 20px 10px;
-                    &:hover {
-                        color: #000;
-                    }
-                }
-                .active {
-                    color: #000;
-                }
             }
-        }
-        &-right-area {
-            @extend .header_bottombar-left-area;
-            direction: rtl;
+            &-right-area {
+                @extend .header_bottombar-left-area;
+                direction: rtl;
+            }
         }
     }
     .cart_number {
-        border: solid 2px #000;
+        border: solid 2px $black;
     }
     .wishlist_number,
     .cart_number{
-        background: rgb(231, 231, 231);
-        color: #000;
+        background: $light;
+        color: $black;
         padding: 5px 15px;
         margin: 0 10px;
     }
@@ -83,7 +83,7 @@ header#mobile-header {
             position: absolute;
             right: -10px;
             top: -10px;
-            background: red;
+            background: $badg-color;
             color: $white;
             border-radius: 50%;
             -webkit-border-radius: 50%;

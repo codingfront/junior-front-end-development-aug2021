@@ -81,11 +81,11 @@
     text-align: center;
     padding: 75px 0 30px;
     &:after {
-        @include background-image(
-        "../../assets/images/icons/broken-line.svg",
+        @include background(
         contain,
-        center,
+        url("../../assets/images/icons/broken-line.svg")
         no-repeat
+        center
         );
         @include translateX(-50%);
         content: "";
@@ -103,43 +103,23 @@
         padding:0 2px;
         svg {
             width: 16px;
-            fill: $star_fill_color;
-            stroke: $star_strok_color;
-           @include transition(all,0.3 ,ease);
+            fill: $star-fill-color;
+            stroke: $star-strok-color;
+           @include transition(fill 0.3s ease);
         }
         &:hover {
             svg {
-            fill: $star_strok_color;
-            stroke: none;
+            fill: $star-fill-color-hover;
+            stroke: $star-strok-color-hover;
             }
             &~a svg {
-                fill: $star_strok_color;
-                stroke: $star_strok_color;
+                fill: $star-fill-color-hover;
+                stroke: $star-strok-color-hover;
             } 
         }
     }
 } 
-// animations
-@keyframes hoverButtons {
-    from {
-        background-position: -190px;
-    }
-    to {
-          background-position: 0;
-    }
-  }
-  @keyframes onHoverButtons {
-    from {
-        background-position: 0;
-        @include background-image("../images/delphinus/button.png",
-        cover,
-        0
-        );
-    }
-    to {
-        background-position: -180px;
-    }
-  }
+// Slide Btn
 .slide-btn {
     background: transparent;
     padding: 0.85em 0.75em;
@@ -147,14 +127,14 @@
     position: relative;
     z-index: 1;
     overflow: hidden;
-    @include transition(color,0.5s);
+    @include transition(color 1s ease);
         &::after {
             content: "";
             background: $white;
             position: absolute;
             z-index: -1;
             display: block;
-            transition: all 1s;
+            @include transition(all 1s ease);
         }
         &.slide_from {
             &_left::after{
@@ -188,7 +168,6 @@
                 right: 0;
                 top: 0;
                 bottom: 0;
-                transition: all 1s; 
             }
         }
     }

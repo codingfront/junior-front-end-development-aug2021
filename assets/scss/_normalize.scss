@@ -18,7 +18,7 @@ a{
     color: $primary-color;
     display:block;
     &:hover{
-        color: $black;
+        color: $link-color-hover;
     }
 }
 p {

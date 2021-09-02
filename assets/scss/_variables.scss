@@ -1,26 +1,42 @@
-$primary-color: rgb(148, 148, 148);
-$light-color: #eee;
+//#----default colors-------
+$primary-color: #949494;
 $white: #fff;
+$light: #e8e8e8;
+$gray: #464646;
 $black: #000;
-$gray: rgb(70, 70, 70);
-$gray-icon-color: #555;
-$star_strok_color: rgb(0, 220, 220);
-$star_fill_color: rgb(255,255,255);
-$container_width: 1024px;
-$primary-font:'karla', 'snas-serif';
-$secondary-font:'roboto-slab', 'snas-serif';
+$badg-color:#ff0000;
+$icon-color: $primary-color;
+$border-color: #ddd;
+
+//colors on hover 
+$icon-color-hover: $black;
+$link-color-hover: $black;
+
+// rating stars
+$star-strok-color: #00dcdc;
+$star-fill-color: #fff;
+$star-fill-color-hover:$star-strok-color;
+$star-strok-color-hover: none;
+
+// grid vatiables
+$container-width: 1024px;
+
+// fonts variables
+$primary-font:'karla', 'sans-serif';
+$secondary-font:'roboto-slab', 'sans-serif';
 $html-font-size:14px;
 
-// $media-breakpoints
-    $big-screen-breakpoint:1140px;
-    $desktop-breakpoint:1024px;
-    $laptop-breakpoint:992px;
-    $ipad-breakpoint:960px;
-    $medium-breakpoint:830px;
-    $tablet-breakpoint:768px;
-    $mobile-breakpoint:578px;
-    $small-breakpoint:491px;
-// 
+// $media-breakpoints variables
+$big-screen-breakpoint:1140px;
+$desktop-breakpoint:1024px;
+$laptop-breakpoint:992px;
+$ipad-breakpoint:960px;
+$medium-breakpoint:830px;
+$tablet-breakpoint:768px;
+$mobile-breakpoint:578px;
+$small-breakpoint:491px;
+
+// default for build css class
 $display:block,inline,flex,grid,inline-block,none;
 $aligns: right, center, left;
 $justifys:right,center,left,space-around,space-between,end,start,flex-end,flex-start;

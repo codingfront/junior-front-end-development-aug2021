@@ -1,5 +1,5 @@
-@mixin transition($element:all , $time , $form:ease-in) {
-    transition: $element $time $form;
+@mixin transition($transition...) {
+    transition: $transition;
 }
 @mixin scale($x,$y) {
     transform: scale($x,$y);
@@ -16,28 +16,13 @@
 @mixin translateY($y){  
     transform: translateY($y);
 }
-@mixin  background-image($url,$size:cover,$position:center,$repeat:no-repeat) {
-        background-image: url($url);
+@mixin  background($size, $bakground...) {
+        background: $bakground;
         background-size: $size;
-        background-position:$position;
-        background-repeat: $repeat;
 }
-//  for responsive
+//  for responsive 
 @mixin media-screen($width) {
     @media only screen and (max-width: $width) {
-      @content;
-    }
-  }
-  @mixin keyframes($name) {
-    @-webkit-keyframes #{$name} {
-      @content;
-    }
-  
-    @-moz-keyframes #{$name} {
-      @content;
-    }
-  
-    @keyframes #{$name} {
       @content;
     }
   }

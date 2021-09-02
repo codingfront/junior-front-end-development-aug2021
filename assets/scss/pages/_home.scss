@@ -3,7 +3,7 @@
 .gray-background:before {
     content: "";
     position: absolute;
-    background-color: #e8e8e8;
+    background-color: $light;
     top: 0;
     height: 200px;
     left: 0;
@@ -38,7 +38,10 @@
     .arrows{
         i.icon{
              font-size: 1.4rem;
-             color: $gray-icon-color;
+             color: $icon-color;
+             &:hover{
+                 color: $icon-color-hover;
+             }
          }
          &_left,&_right {
              top: 45%;
@@ -80,12 +83,12 @@
             .shop-btn {
                 padding: 10px 15px;
                 color: $white;
-                border: solid 2px #fff;
+                border: solid 2px $white;
                 min-width: 180px;
                 display:block;
                 &:hover{
                     font-weight: bold;
-                    color: $black;
+                    color: $link-color-hover;
                 }
             } 
         }
@@ -98,10 +101,10 @@
             left: 0;
             background-color: $black;
             opacity: 0.4;
-            @include transition(background-color,0.3s,ease);
+            @include transition(opacity 0.3s ease);
         }
         &:hover::after {
-            opacity: 0.5;
+            opacity: 0.6;
         }
     }
 }
@@ -121,6 +124,9 @@
                 width: 50%;
             }
             .product-description .product-holder {
+                .product-title{
+                    text-transform: capitalize;
+                }
                 padding: 0 10px;
                 .product-price{
                     margin: 10px 0;
@@ -130,7 +136,7 @@
                 }
             }
             .product-thumbnail{
-                @include transition(transform,0.6s , ease);
+                @include transition(transform 0.6s ease);
                 &:hover{
                     @include rotateY(180deg);
                 }
@@ -147,8 +153,7 @@
     .latest_gallery{
         &-item {
             width: 25%;
-            position: relative;
-            @include transition( transform,0.4s, ease);
+            @include transition( transform 0.4s ease);
             a{
                 display: block;
                 img {
@@ -159,15 +164,6 @@
             }
             &:hover{
                 @include scale(0.9,0.9);
-            }
-            &::after{
-                content: '';
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                top: 0;
-                right: 0;
-                
             }
         }
     }
@@ -180,9 +176,10 @@
     .about-delphinus {
         width: 66.66%;
         &-background{
-            @include background-image("../../assets/images/delphinus/abou-us-background.jpg",
+            @include background(
             cover,
-            center,
+            url("../../assets/images/delphinus/abou-us-background.jpg")   
+            center 
             no-repeat
             );
             line-height: 29px;
@@ -201,8 +198,8 @@
     .news-letter {
         width: 33.33%;
         &-spacing {
-            padding: 30px 30px 95px;
-            border: solid 2px #ddd;
+            padding: 30px 30px 136px;
+            border: solid 2px $border-color;
             p.news-letter-desc {
                 margin: 15px 0;
             }
@@ -210,7 +207,7 @@
         form {
             input {
                 padding: 10px 20px;
-                border: solid 2px #ddd;
+                border: solid 2px $border-color;
                 width:100%;
             }
             button[type="submit"] {
@@ -218,7 +215,7 @@
                 right:13px;
                 top: 50%;
                 @include translateY(-50%);
-                color: $gray-icon-color;
+                color: $icon-color;
                 background:none;
                 border: none;
             }
@@ -232,7 +229,7 @@
                 img {
                     width: 100%;
                     height: auto;
-                    @include transition(transform,0.3s,ease);
+                    @include transition(transform 0.3s ease);
                     &:hover{
                     @include scale(1.1,1.1);
                     }
@@ -248,7 +245,7 @@
                 width: 16.66%;
                 opacity: 0.6;
                 text-align: center;
-                @include transition( transform, 0.3s ,ease);
+                @include transition(transform 0.3s ease);
                 &:hover{
                     opacity: 1;
                     @include scale(1.1,1.1);
@@ -258,7 +255,7 @@
     }
 }
 #free-shipping {
-    background-color: $light-color;
+    background-color: $light;
     padding: 80px 0;
     .free-shipping-box-item {
         width: 50%;

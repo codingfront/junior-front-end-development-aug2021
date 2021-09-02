@@ -3,7 +3,7 @@
     @include media-screen($big-screen-breakpoint) {
         .container{
             width:100%;
-        }
+        } 
     }
 // 1024
     @include media-screen($desktop-breakpoint) {
@@ -28,7 +28,7 @@
         #aboutUs{ 
             .news-letter {
                 &-spacing {
-                    padding: 30px;
+                    min-height:322px
                 }
             }
         }
@@ -40,10 +40,20 @@
             }
             .news-letter{
                 margin-top:1rem;
+                &-spacing {
+                    min-height:0;
+                    padding-bottom: 30px;
+                }
+
             }
         }
     }
     @include media-screen($tablet-breakpoint) {
+        .gray-background {
+            &:before{
+                height: 145px;
+            }
+        }
         #chair-section{
             .chairParent .chair{
                 display: block;
