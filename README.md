@@ -2,7 +2,7 @@
 ## Aug 2021
 ## By Parisa Adaminejad
 
->Very Basic Sass(SCSS) boilerplate.
+>Very Basic Sass(SCSS) Template.
 
 ### Prerequisites
 * node

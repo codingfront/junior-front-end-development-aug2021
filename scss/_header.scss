@@ -1,0 +1,107 @@
+#header{
+    .header-top{
+       border-bottom: 0.07rem solid $gray;
+       ul{
+           &.header-menu{
+                @include centerContent;
+                justify-content: flex-end;
+                li{
+                    border-left: 0.07rem solid $gray;
+                     
+                a{
+                    display: block;
+                    padding: 0 1rem;
+                    color: $drakgray;
+                    text-transform: uppercase;
+                    font-size: 0.8rem;
+                    line-height: 2.8rem;
+                    .zero-cart,
+                    .zero-wish{
+                        @include border; 
+                    }
+                    .zero-wish{
+                        border: none;
+                    }   
+                  } 
+                }
+               
+            }
+    
+        }
+   }
+       .header-bottom{
+           padding: 1.4rem 2.1rem;
+    
+           .navbar{
+               @include centerContent;
+               justify-content: space-between;
+               
+               ul{
+                   &.menu-item{
+                       @include centerContent;
+                       .menu-link{
+                           padding: 1.4rem 0.71rem;
+                           color: $drakgray;
+                           text-transform: uppercase;
+                           font-size: 0.8rem;
+                           &.active{
+                               color: $drak;
+                           }
+                           &:hover{
+                               color: $drak;
+                           }
+                       }
+       
+                   }
+               }
+           }
+          
+       }
+   
+}
+#mobile-header{
+   margin: 15px 0;
+   .mobile-header-section{
+    @include betweenContent;
+    position: relative;
+    ul{
+        &.mobile-header-iconleft{
+           display: flex;
+            li{
+               padding: 0 10px;
+                a i{
+                   font-size: 1.2rem;
+                   color: $drakgray;  
+                }
+                span{
+                     position: absolute;
+                     top: -5px;
+                     left: 50px;
+                     background: $red;
+                     color: $white;
+                     border-radius: 50%;
+                     width: 14px;
+                     height: 14px;
+                     font-size: 10px;
+                     text-align: center;
+                     line-height: 14px;
+               }
+           }
+       }
+       &.mobile-header-iconright{
+           display: flex;
+            li{
+               padding: 0 10px;
+               
+           }
+             li:last-child i {
+               font-size: 1.3rem;
+               background: $gray;
+               border-radius: 5px;
+               padding: 5px;
+           }
+       }
+    }
+   }
+  
+}

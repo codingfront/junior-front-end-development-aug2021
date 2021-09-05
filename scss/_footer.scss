@@ -1,6 +1,6 @@
 
 #footer{
-    margin-top: $margin-top;
+    margin-top: 3rem;
     .footer-top{
         @include spaceContent;
          h3{
@@ -9,7 +9,7 @@
          li{
             margin-top: .7rem;
              a{
-                 display: $block;
+                 display: block;
                 color: $drakgray;
                 text-transform: capitalize;
                 &:hover{
@@ -22,18 +22,21 @@
         background: $pink;
         margin-top: 2rem;
         padding: 30px 0;
-        .footer-bottom-item{
-            @include centerContent;
-             a{
-                 display: $block;
-                padding: 20px;
-                color: $drakgray;
-                transition: all .5 ease;
-                &:hover{
-                    transform: scale(2,2);
+        ul{
+           &.footer-bottom-item{
+                @include centerContent;
+                 a{
+                     display: block;
+                    padding: 20px;
+                    color: $drakgray;
+                    transition: all .5 ease;
+                    &:hover{
+                        transform: scale(2,2);
+                    }
                 }
             }
         }
+        
         .footer-bottom-text{
             text-align: center;
             color: $drakgray;

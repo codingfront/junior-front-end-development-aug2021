@@ -1,2 +1,103 @@
+@media (max-width: 1440px) {
+  #mobile-header {
+    display: none;
+  }
+}
+
+@media (max-width: 1026px) {
+  #shipping .shipping-item .shipping-item-holder {
+    padding: 2rem 5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  #header {
+    display: none;
+  }
+  #mobile-header {
+    display: block;
+  }
+  #sliders .slider-cheir:last-child {
+    display: none;
+  }
+  #aboutus-section .aboutus .aboutus-rows {
+    margin: 0 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #project-wrapper .project-wrapper-item {
+    width: 100%;
+  }
+  #products .product-item {
+    width: 48%;
+  }
+  #aboutus-section .aboutus .aboutus-rows .aboutus-item {
+    display: block;
+    margin-bottom: 10px;
+  }
+  #aboutus-section .aboutus .aboutus-rows .aboutus-item .aboutus-newsletter {
+    margin: 0;
+  }
+  #aboutus-section .aboutus .aboutus-rows .aboutus-item .aboutus-newsletter .about-item-holder .news-letter-spacing {
+    padding: 1.4rem;
+  }
+  #aboutus-section .aboutus .aboutus-rows .aboutus-item .aboutus-item-holder {
+    margin-bottom: 15px;
+  }
+  #aboutus-section .aboutus .aboutus-rows .aboutus-content-img-item {
+    margin-right: 0;
+  }
+  #shipping .shipping-item .shipping-item-holder {
+    margin: 1rem 12px;
+  }
+  #shipping .shipping-item:first-child {
+    margin: 1rem 12px 0 12px;
+  }
+  #shipping .shipping-item:last-child {
+    margin: 0 12px 1rem 12px;
+  }
+}
+
+@media (max-width: 886px) {
+  #aboutus-section .aboutus-rows .aboutus-item .aboutus-background-spacing {
+    padding: 27px;
+  }
+}
+
+@media (max-width: 578px) {
+  #products {
+    margin-left: 10px;
+    gap: 10px;
+  }
+  #products .product-item {
+    width: 100%;
+  }
+  #latest .latest-product-item {
+    display: inline-block;
+    width: 50%;
+  }
+  #aboutus-section .aboutus .aboutus-rows .aboutus-content {
+    display: block;
+  }
+  #aboutus-section .aboutus .aboutus-rows .aboutus-content .aboutus-content-img-item .aboutus-content-img-item-holder {
+    margin-top: 11px;
+  }
+  #shipping .shipping-item .shipping-item-holder {
+    font-size: 1.1rem;
+  }
+  #footer .footer-top {
+    display: block;
+  }
+  #footer .footer-top-column {
+    margin: 0 30px 15px 30px;
+  }
+}
+
+@media (max-width: 491px) {
+  #sliders .slider-cheir:nth-child(2) {
+    display: none;
+  }
+}
 
 /*# sourceMappingURL=responsive.css.map */

@@ -27,6 +27,18 @@
   justify-content: center;
   
 }
+@mixin transition($element,$time,$form) {
+  transition: $element $time $form; 
+}
+@mixin scale($x,$y){
+  transform: scale($x,$y);
+}
+@mixin rotatey($deg){
+  transform: rotateY($deg);
+}
+@mixin translate($x,$y){
+  transform: translate($x,$y);
+}
 @mixin inset($top,$right,$bottom,$left) {
   top:$top;
   right:$right;
@@ -62,11 +74,12 @@
   
 }
 
-@mixin desktop{
+@mixin desktop {
   @media(max-width:992px){
     @content;
   }
 }
+
 @mixin tablet{
   @media(max-width:768px){
     @content;
@@ -83,3 +96,10 @@
     @content;
   }  
 }
+
+// @each $align in justifys {
+//   .justify-content-#{$align}{
+//     justify-content: $align;
+//   }
+  
+// }
