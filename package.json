@@ -1,0 +1,26 @@
+{
+  "name": "delphinus-template",
+  "version": "1.0.0",
+  "description": "HTML free template ",
+  "main": "index.js",
+  "scripts": {
+    "start": "node_modules/gulp/bin/gulp.js watch",
+    "min": "node_modules/gulp/bin/gulp.js min",
+    "minify-css": "node_modules/gulp/bin/gulp.js minify-css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hossein Alaei",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^3.0.0"
+  },
+  "dependencies": {
+    "graceful-fs": "^4.2.6",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-rename": "^2.0.0"
+  }
+}

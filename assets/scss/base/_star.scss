@@ -1,0 +1,24 @@
+.nav-star{
+    margin-top: 7px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    a.link{
+        padding:0 2px;
+        svg {
+            width: 14px;
+            fill: $body-bg;
+            stroke: $star;
+        }
+        &:hover {
+            svg {
+            fill: $star;
+            stroke: none;
+            }
+            &~a svg {
+                fill: $star;
+                stroke: $star;
+            } 
+        }
+    }
+} 

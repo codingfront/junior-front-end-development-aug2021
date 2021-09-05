@@ -1,0 +1,235 @@
+@media screen and (max-width: 1140px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+
+  #about  {
+    .about-row-1 {
+      .about-describtion {
+        width: 66.66%;
+      }
+      .news-letter {
+        width: 33.33%;
+      }
+      .news-letter-inner {
+        padding: 30px 20px 112px 20px;
+      }
+    }
+    }
+}
+
+@media screen and (max-width: 960px) {
+  #about {
+    .about-row-1 {
+      .news-letter {
+        .news-letter-inner {
+          padding: 30px 20px 112px 20px;
+        }
+      }
+    }
+  }
+}
+
+/* @media screen and (max-width: 880px) {
+    .container {
+      width: 100%;
+      overflow: hidden;
+    }
+  } */
+
+@media screen and (max-width: 992px) {
+  #header {
+    display: none;
+  }
+  #mobile-header {
+    display: block;
+    padding: 10px 0;
+    ul {
+      @include flexDefault;
+      gap: 15px;
+      align-items: center;
+      margin-top: 10px;
+    }
+    .icon-right-section {
+      li {
+        &:last-child {
+          font-size: 1.3rem;
+          padding: 2px 5px;
+          border-radius: 5px;
+          background: $gray-middle;
+        }
+      }
+    }
+    .basket {
+      position: relative;
+      span {
+        position: absolute;
+        right: -10px;
+        top: -10px;
+        background:$red;
+        color: $body-bg;
+        border-radius: 50%;
+        width: 18px;
+        height: 18px;
+        font-size: 10px;
+        z-index: 1;
+        line-height: 18px;
+        text-align: center;
+      }
+    }
+  }
+
+  #about {
+    .about-row-1{
+      .news-letter-inner {
+        padding: 30px 20px 112px 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 830px) {
+
+  #about {
+    .about-row-1{
+      .about-describtion {
+        width: 100%;
+      }
+      .news-letter {
+        width: 100%;
+        margin-top: 30px;
+        .news-letter-inner {
+          padding: 30px 30px 60px 30px;
+          p {
+            margin-bottom: 20px;
+          }
+          input {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .fas.fa-shopping-basket,
+  .nav form {
+    display: none;
+  }
+  #slider {
+    .slider .chair {
+      img {
+        max-width: 180px;
+      }
+      .rate , .paroduct-title{
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  form button[type="submit"] {
+    position: absolute;
+    right: 15px;
+    top: 49%;
+    transform: translateY(-49%);
+    color: #555;
+    background: none;
+    border: none;
+  }
+  #categories {
+    .category-item {
+      width: 100%;
+      position: relative;
+      .category-item-content {
+        a {
+          padding: 5px 0;
+        }
+      }
+    }
+  }
+
+  #features .features-products-item {
+    width: 50%;
+  }
+  .latest-product .latest-product-item .latest-product-img {
+    width: 50%;
+  }
+
+  #about {
+    .about-row-2 {
+      .about-banner {
+        width: 100%;
+        margin-top: 20px;
+        .about-banner-holder {
+          padding: 3px 10px;
+        }
+      }
+    }
+    .about-row-brands {
+      .about-row-brands-holder {
+        padding: 0;
+        .about-rows-brands-item {
+          width: 33.33%;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  #free-shipping .container{
+    .banner-item {
+      width: 100%;
+      h3 {
+        margin: 10px 0;
+        font-size: 1rem;
+        .free-shipping-left {
+          margin-right: 0;
+        }
+        .free-shipping-right {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+
+  #footer .footer-holder .footer-link {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #features .features-products-item {
+    width: 100%;
+  }
+  #about .about-row-brands .about-row-brands-holder .about-rows-brands-item {
+    width: 50%;
+    text-align: center;
+  }
+  .slider {
+    .chair {
+      &:first-child {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 491px) {
+  .slider .chair:nth-child(2) {
+    display: none;
+  }
+
+  .latest-product .latest-product-item .latest-product-img {
+    width: 100%;
+  }
+
+  #footer .footer-holder .footer-link {
+    text-align: center;
+    width: 100%;
+  }
+}

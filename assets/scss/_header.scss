@@ -1,0 +1,64 @@
+#header {
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.1%);
+  .top-header {
+    @include flexDefault;
+    justify-content: flex-end;
+    border-bottom: 1px solid $primary-color;
+    ul {
+      li {
+        padding: 20px 10px;
+        display: inline-block;
+        border-left: 1px solid $primary-color;
+        font-family: "Segoe UI";
+        color: $primary-color;
+        font-size: 12px;
+      }
+      .wishlist-num,
+      .cart-num {
+        background-color: $primary-color;
+        padding: 5px 15px;
+        margin-left: 15px;
+        color: $black;
+      }
+      .cart-num {
+        border: solid 2px $black;
+      }
+    }
+  }
+  .bottom-header {
+    @include flexDefault;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+  }
+  .nav {
+    ul {
+      @include flexDefault;
+    }
+    li {
+      font-family: "Segoe UI";
+      padding: 0 20px;
+      a {
+        padding: 20px 0;
+        font-size: 14px;
+        &:hover {
+          color: $black;
+        }
+      }
+    }
+  }
+  .search {
+    cursor: pointer;
+  }
+}
+
+#mobile-header {
+  display: none;
+  .mobile-header-responsive {
+    @include flexDefault;
+    justify-content: space-between;
+    align-items: baseline;
+    position: relative;
+    height: 40px;
+  }
+}

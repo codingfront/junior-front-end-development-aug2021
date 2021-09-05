@@ -1,0 +1,38 @@
+@mixin flexDefault {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+@mixin rate {
+  color: rgb(0, 182, 206);
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+@mixin topTransform {
+  transform: translateY(-50%);
+  top: 50%;
+}
+
+@mixin center {
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+@mixin overlay($z-index: null) {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $color-image-overlay;
+    opacity: $opacity-image-overlay;
+    @if ($z-index) {
+      z-index: $z-index;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.section-title {
+  font-family: "Roboto";
+  width: 100%;
+  display: inline-block;
+  padding: 60px 0 20px 0;
+  text-align: center;
+}
+
+.section-title-name {
+  padding-top: 25px;
+  position: relative;
+}
+
+.section-title-name::before {
+  content: "";
+  background-image: url(../../assets/image/wave.jpg);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 21px;
+  top: 0;
+  left: 0;
+}
+
+.section-title h2 {
+  padding: 25px 0 8px 0;
+  margin: 0;
+}
+
+.section-title span {
+  display: inline-block;
+  padding: 5px 0 10px 0;
+}
+
+.see-all {
+  color: #999;
+  font-size: 9px;
+}
