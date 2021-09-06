@@ -291,6 +291,11 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0;
 }
 
+img {
+  display: block;
+  margin: 0 auto;
+}
+
 header#header {
   background-color: #fff;
 }
@@ -419,8 +424,6 @@ header#mobile-header .mobile-header__responsive .mobile-header__logo img {
 #chair-section .chairParent .chair img {
   max-width: 250px;
   height: auto;
-  display: block;
-  margin: 0 auto;
 }
 #chair-section .chairParent .chair .price, #chair-section .chairParent .chair .stars {
   display: block;
@@ -550,7 +553,6 @@ header#mobile-header .mobile-header__responsive .mobile-header__logo img {
 #latest .latest_gallery-item a img {
   width: 100%;
   height: auto;
-  display: block;
 }
 #latest .latest_gallery-item:hover {
   transform: scale(0.9, 0.9);
@@ -558,7 +560,7 @@ header#mobile-header .mobile-header__responsive .mobile-header__logo img {
 
 /*about us */
 #aboutUs .about-delphinus-holder {
-  padding: 0 15px;
+  margin: 0 15px;
 }
 #aboutUs .about-delphinus {
   width: 66.66%;
@@ -606,7 +608,8 @@ header#mobile-header .mobile-header__responsive .mobile-header__logo img {
   width: 33.33%;
 }
 #aboutUs .aboutUs_rows-images-item-holder {
-  padding: 30px 15px;
+  margin: 30px 15px;
+  overflow: hidden;
 }
 #aboutUs .aboutUs_rows-images-item-holder img {
   width: 100%;
@@ -699,14 +702,6 @@ header#mobile-header .mobile-header__responsive .mobile-header__logo img {
     width: 100%;
   }
 }
-@media only screen and (max-width: 1024px) {
-  #aboutUs .about-delphinus {
-    width: 66.66%;
-  }
-  #aboutUs .news-letter {
-    width: 33.33%;
-  }
-}
 @media only screen and (max-width: 992px) {
   header#header {
     display: none;
@@ -717,7 +712,7 @@ header#mobile-header .mobile-header__responsive .mobile-header__logo img {
   }
 }
 @media only screen and (max-width: 960px) {
-  #aboutUs .news-letter-spacing {
+  #aboutUs .news-letter-spacing, #aboutUs .about-delphinus-spacing {
     min-height: 322px;
   }
 }
@@ -771,8 +766,8 @@ header#mobile-header .mobile-header__responsive .mobile-header__logo img {
     width: 100%;
   }
   #aboutUs .aboutUs_rows-images-item-holder {
-    padding-top: 3px;
-    padding-bottom: 3px;
+    margin-top: 0;
+    margin-bottom: 15px;
   }
   #aboutUs .aboutUs_rows-brands-holder {
     padding: 0;
