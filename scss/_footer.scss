@@ -1,0 +1,58 @@
+/* Footer
+* ===============
+*
+* Place all your footer declarations here */
+/***************FOOTER***************/
+.container-holder{
+    padding: 50px 0;
+
+    .footer-list {
+        @include flexRow;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    
+        .footer-list__content {
+    
+            h3 {
+                margin-bottom: 20px;
+            }
+    
+            ul {
+            line-height: $p-line-height;
+            }
+        }
+    }
+    
+}
+
+.contact-us {
+    background-color: $main-color;
+    height: 120px;
+    @include coverWidth;
+
+    .contact-us__content {
+        @include centerAlign;
+
+        .contact-us__app {
+            a {
+                padding: 30px;
+                color: $main-font-color;
+
+                i{
+                    margin: 40px 0 20px 0;
+                    max-width: 7px;
+
+                    &:hover {
+                        color: $black;
+                    }
+                }
+  
+            } 
+        }
+
+        span {
+            color: $main-font-color;
+        }
+        
+    }
+}

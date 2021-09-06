@@ -1,0 +1,21 @@
+/**************SECTION-TITLE*************/
+.section-title {
+    position: relative;
+    padding: 100px 0 60px 0;
+    @include centerAlign;
+
+    &::after{
+        content: "";
+        background: url(../../assets/images/svg/broken-line.svg); 
+        @include coverWidth;
+        left: 50%;
+        @include translateX(-50%);
+        position: absolute;
+        top: 15px;
+        height: 30px;
+        background-repeat: no-repeat;
+        background-size: 50px;
+        background-position: center;
+        margin-top: 40px;
+    }
+}

@@ -1,0 +1,142 @@
+/*****************HEADER***************/
+.header-top {
+    border-bottom: 2px solid $main-color;
+
+    ul {
+        @include flexRow;
+        justify-content: flex-end;
+    }
+
+    .header-top__content {
+        @include flexRow;
+        border-left: 2px solid $main-color;
+        padding: 13px;
+
+        .zero,
+        .zero-border {
+            padding: 4px 13px; 
+            background-color: $main-color;
+            margin: 0 5px; 
+            color: $black;
+        }
+
+        .zero-border {
+            border: 2px solid $black;
+        }
+    }
+}
+
+
+.header-bottom {
+    padding: 20px;
+
+    .header-bottom__holder {
+        @include flexRow;
+        justify-content: space-between;
+
+        .logo {
+            margin-top: 20px;
+        }
+
+        .main-nav {
+            margin-right: 130px;
+
+            .navbar {
+                @include flexRow;
+                margin-top: 20px;  
+
+                .navbar__item {
+                    .navbar__item__home {
+                        color: $black;
+                    }
+        
+                    a {
+                    padding: 15px;
+                    }
+                }
+            }
+        }
+
+        .search {
+            margin-top: 20px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+    }    
+}
+
+
+
+
+/****************MOBILE-HEADER***************/
+#mobile-header {
+    display: none;
+    padding: 15px;
+
+        .mobile-header__holder {
+            @include flexRow;
+            justify-content: space-between;
+            
+            .mobile-header__left-side,
+            .mobile-header__right-side {
+                
+                ul{
+                    @include flexRow;
+
+                    li {
+                        padding: 7px 10px;
+                        font-size: $font-size-h3;
+                        margin: 0 5px;
+                    }
+                }
+            }
+
+            .mobile-header__left-side {
+
+                .icon-left-section {
+
+                    .basket {
+
+                        a {
+                            position: relative;
+                            
+                            span {
+                                position: absolute;
+                                right: -10px;
+                                top: -10px;
+                                background: $red;
+                                color: $white;
+                                border-radius: 50%;
+                                width: 18px;
+                                height: 18px;
+                                font-size: $font-size-h5;
+                                z-index: 1;
+                                line-height: 1.5rem;
+                                @include centerAlign; 
+                            }
+                        }
+                    }
+                }
+            }
+
+            .mobile-header__logo {
+                margin-top: 10px;
+            }
+
+            .mobile-header__right-side {
+
+                .icon-right-section {
+
+                    li{
+                        &:last-child {
+                            background: $main-color;
+                            border-radius: 5px;
+                            margin-left: 10px;
+                        }
+                    }
+
+
+                }
+            }
+        }
+}

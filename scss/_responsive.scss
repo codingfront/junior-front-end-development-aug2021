@@ -1,0 +1,269 @@
+
+/********************DESKTOP*****************/
+@media (max-width: $desktop) {
+    #container {
+        width: $container-width;
+    }
+    .arrow {
+
+        .arrow-chairs {
+
+            .arrow-chair {
+                width: 25%;
+
+                    &:first-child {
+                        display: none;
+                    }
+            }
+        }
+    }
+}
+
+
+/*****************SMALL-DESKTOP******************/
+@media screen and (max-width: $small-desktop) {
+    .arrow{
+
+        .arrow-chairs {
+
+            .arrow-chair {
+                width: 30%;
+            }
+        }
+    } 
+
+}
+
+
+/********************TABLET*******************/
+@media (max-width: $tablet) {
+    #main-header {
+        display: none;
+    }
+
+    #mobile-header {
+        display: block;
+    }
+
+    .about-us__content {
+        .about-us__information {
+            @include flexColumn;
+            
+            .we-are-delphinus {
+                width: 100%;
+            }
+
+            .newsletter {
+                width: 100%;
+
+                .newsletter__holder {
+                    margin: 30px 0 0 0;
+
+                    .newsletter__content {
+                        form {
+                            input {
+                                width: 50%;
+                            }
+
+                            button {
+                                right: 26%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .free-shipping {
+    
+        .shippings {
+            @include flexColumn;
+            align-items: center;
+    
+            .shipping {
+                width: 70%;
+        
+                .shipping-holder {
+                    margin: 15px 0;
+                }
+            }
+        }  
+    }
+
+    .about-us__content {
+
+        .about-us__poster {
+            
+            .about-us__poster-images {
+                max-width: 60%;
+                margin: 0 auto 30px auto;
+
+                .poster-images__holder {
+                    margin-left: 0;
+
+                    img {
+                        max-height: unset;
+                        min-height: unset;
+                        display: block;
+                    }
+                }
+
+                .last-poster {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    
+    }
+
+    .shop-now {
+        .shop-now__category {
+            .shop-content {
+
+                h3 {
+                     font-size: 1rem;
+                }
+
+                a {
+                    min-width: 110px;
+                    font-size: 1rem;
+                    padding: 5px 15px;
+                }
+            }
+        }
+    }
+    
+}
+
+
+/*****************SMALL-TABLET***************/
+@media screen and (max-width: $small-tablet) {
+
+    .arrow {
+        .arrow-chairs {
+
+            .arrow-chair {
+                width: 50%;
+        
+                &:last-child {
+                    display: none;
+                }
+            } 
+
+        }
+    }
+
+    .shop-now {
+
+        .shop-now__category {
+            width: 100%;
+        }
+    }
+
+    .latest-product {
+
+        .latest-product__poster {
+
+            .poster-images {
+                max-width: 50%;
+            }
+        }
+    }
+
+
+    .about-us__content {
+
+        .about-us__poster {
+            
+            .about-us__poster-images {
+                max-width: 100%;
+                margin: 0 0 30px 0;
+
+                .poster-images__holder {
+                    margin-left: 0;
+
+                    img {
+                        max-height: unset;
+                        min-height: unset;
+                        display: block;
+                    }
+                }
+
+                .last-poster {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    
+    }
+    
+    .free-shipping {
+        .shippings {
+            .shipping {
+                .shipping-holder {
+                    a{
+                        h2 {
+                            font-size: 1.3rem;
+                        }
+                    }
+                   
+                }
+            }
+        }
+    }
+    
+}
+
+
+/*******************MOBILE******************/
+@media screen and (max-width: $mobile) {
+    // .container {
+    //     padding: 0;
+    // }
+    .latest-product {
+
+        .latest-product__poster {
+            @include flexColumn;
+
+            .poster-images {
+                max-width: 100%;
+
+            }
+        }
+    }
+
+    .free-shipping {
+        .shippings {
+            .shipping {
+                .shipping-holder {
+                    a{
+                        h2 {
+                            font-size: 1.1rem;
+                        }
+                    }
+                   
+                }
+            }
+        }
+    }
+
+    .footer-list {
+        justify-content: center;
+        .footer-list__content {
+            min-width: 15rem;
+            margin-bottom: 40px;
+        }
+    }
+
+    .about-us {
+        .about-us__brands {
+            .brands {
+                img {
+                    max-width :100px;
+                }
+            }
+        }
+    }
+}
+

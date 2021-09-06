@@ -1,0 +1,103 @@
+@mixin overlay($z-index: null) {
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $color-image-overlay;
+    opacity: $opacity-image-overlay;
+    @if ($z-index) {
+      z-index: $z-index;
+    }
+  }
+}
+
+
+@mixin h3Size {
+  font-size: $h3-font;
+  line-height: 1.1rem;
+  margin: 0 0 1.7rem 0;
+}
+
+@mixin zeroDefault {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin cover {
+  width: 100%;
+  height: 100%;
+}
+
+@mixin coverWidth {
+  width: 100%;
+}
+
+@mixin autoCover {
+  width: 100%;
+  height: auto;
+}
+
+@mixin flexRow {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin containerFluid {
+  width: $container-fluid-width; 
+  // position: relative;
+}
+
+@mixin mainHolder {
+  width: 70%;
+  margin: 0 auto;
+}
+
+@mixin translate($x, $y) {
+  transform: translate($x, $y);
+}
+
+@mixin translateY($y) {
+  transform: translateY($y);
+}
+
+@mixin translateX($x) {
+  transform: translateX($x);
+}
+
+@mixin transition($element, $time, $form) {
+  transition: $element $time $form;
+}
+
+@mixin scale($z) {
+  transform: scale($z);
+}
+
+@mixin decorationNone {
+  text-decoration: none;
+}
+
+@mixin centerAlign {
+  text-align: center;
+}
+
+@mixin noneStyle {
+  list-style: none;
+}
+
+@mixin zeroTopLeft {
+  top: 0;
+  left: 0;
+}
+
+@mixin halfTopLeft {
+  top: 50%;
+  left: 50%;
+}

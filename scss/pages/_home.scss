@@ -1,0 +1,484 @@
+/* Home
+* ===============
+*
+* Place all your home page declarations here */
+
+
+/****************ARROW*****************/
+.arrow {
+    @include centerAlign;
+    position: relative;
+    padding-top: 20px;
+    margin-bottom: 40px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        background-color: $main-color;
+        @include zeroTopLeft;
+        @include coverWidth;
+        height: 200px;
+        z-index: -1;
+    }
+
+    .arrow-chairs {
+        @include flexRow;
+        flex-wrap: wrap;
+        justify-content: center;
+        @include coverWidth;
+
+        .arrow-chair {
+            text-align: center;
+            width: 20%;
+
+            a {
+
+                img {
+                    display: block;
+                    @include coverWidth;
+                    @include transition(transform, .5s, ease);
+
+                    &:hover {
+                        @include scale(1.2);
+                    }
+                }
+    
+                h4 {
+                    color:$black;
+                    margin-top: 30px;
+                }
+
+                span {
+                    color: $main-font-color;
+                    display: block;
+                    margin: 10px 0;
+                }
+
+                .arrow-stars {
+                    margin-bottom: 20px;
+                    
+                    i {
+                        margin-right: 3px;
+                        color: $main-font-color;
+
+                        &:hover {
+                            color: $star-blue-hover;
+                        }
+                    }
+                }
+
+            }  
+        }
+    }  
+    
+    .left-right-arrows {
+        cursor: pointer;
+    
+        .arrow-left {
+            top: 35%;
+            left: 15%;
+            @include translate(-15%, -35%);
+            position: absolute;
+            padding: 7px 14px;
+            box-shadow: 0 2px 6px 0 rgba(0, 0, 0,.2);
+            background-color: $white;
+            border-radius: 2px;
+        }
+    
+        .arrow-right {
+            top: 35%;
+            right: 15%;
+            @include translate(-15%, -35%);
+            position: absolute;
+            padding: 7px 14px;
+            box-shadow: 0 2px 6px 0 rgba(0, 0, 0,.2);
+            background-color: $white;
+            border-radius: 2px;
+        }
+    }
+    
+}
+
+
+
+
+
+/***************SHOP-NOW****************/
+.shop-now {
+    @include flexRow;
+    flex-wrap: wrap;
+
+    .shop-now__category{
+        position: relative;
+        width: 33.33%;
+    
+        &::after {
+            content: "";
+            position: absolute;
+            @include cover;
+            @include zeroTopLeft;
+            background: rgba(0,0,0,0.400);
+        }
+    
+        img {
+            @include autoCover;
+        }
+    
+        .shop-content {
+            position: absolute;
+            @include halfTopLeft;
+            @include translate(-50%, -50%);
+            @include centerAlign;
+            color: $white;
+            z-index: 1;
+        
+            h3 {
+                margin-bottom: 40px;
+            }
+            
+            a {
+                display: inline-block;
+                color: $white;
+                border: 2px solid $white;
+                padding: 10px 15px;
+                font-size: 1.2rem;
+                @include transition(all, .3s, ease);
+                min-width: 120px;
+
+                &:hover {
+                    background-color: $white;
+                    color: $main-font-color;
+                }
+            }
+        }
+        
+    }
+    
+}
+
+
+
+
+/************PRODUCT-FEATURES**********/
+.product-features {
+    @include flexRow;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .product-features__item {
+        
+        .product-features__item-holder {
+            @include flexRow;
+            flex: 1 1 25em;
+
+            .product-features__item__image {
+                overflow: hidden;
+            
+                img {
+                    max-width: 170px;
+                    margin: 15px;
+                    @include transition (transform, .5s, ease);
+    
+                    &:hover {
+                        @include scale(1.1);
+                    }
+                }
+            }
+    
+            .product-features__item__text {
+                .item__text__holder {
+                    margin: 15px 0;
+
+                    p {
+                        color: $main-font-color;
+                        margin-top: 10px;
+    
+                        &:first-child {
+                            font-weight: bold;
+                            font-size: $font-size-h4;
+                            color: $black;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+
+
+
+
+
+/**************HOVER-STARS*************/
+
+.product-stars {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 65px;
+
+    .star {
+        margin-right: 3px;
+        cursor: pointer;
+
+        svg {
+            width: 12px;
+            fill: $border-color;           
+        }
+
+        &:hover {
+            svg {
+                fill: $border-color;
+            }
+
+        }
+
+        &:hover svg,
+        &:hover ~ .star svg {
+            fill: $star-blue-hover;
+            
+        }
+    }
+
+ }
+
+
+
+
+
+/**************LATEST PRODUCT************/
+.latest-product__poster {
+    @include flexRow;
+    flex-wrap: wrap;
+
+    .poster-images {
+        @include flexRow;
+        overflow: hidden;
+        max-width: 25%;
+
+        img {
+            @include coverWidth;
+            @include transition(transform, 0.5s,ease);
+
+            &:hover {
+                @include scale(1.15);
+            } 
+        }   
+    }
+}
+
+
+
+
+
+/***************ABOUT US***************/
+.about-us__content {
+
+    .about-us__information {
+        @include flexRow;
+        margin-bottom: 30px;
+        justify-content: center;
+        
+    
+        .we-are-delphinus {
+            width: 60%;
+            background: url(../../assets/images/background/background-1.jpg) no-repeat center center /cover;
+            color: $white;
+    
+            .we-are-delphinus__holder {
+                padding: 45px 35px 25px 35px;
+                position: relative;
+                h3 {
+                    margin-bottom: 30px;
+                }
+
+                .about-delphinus-description {
+                    margin-bottom: 30px;
+                }
+
+                p {
+                    margin-bottom: .15rem;
+
+                   &:last-child {
+                       margin-top: 0;
+                   }
+                }
+            }
+        }
+    
+        .newsletter {
+            width: 30%;
+           
+            .newsletter__holder {
+                @include centerAlign;
+                margin-left: 20px;
+
+                .newsletter__content {
+                border: 2px solid $border-color;
+                padding: 45px 35px 30px 35px;
+
+                h3{
+                    margin-bottom: 30px;
+                }
+
+                form {
+                    position: relative;
+                    margin: 35px 0 57px 0;
+        
+                    input {
+                        border: 2px solid $border-color;
+                        padding: 10px 29px 10px 10px;
+                        text-indent: 5px;
+                        width: 90%;
+                    }
+                }
+        
+                    button {
+                            position: absolute;
+                            top: 10px;
+                            right: 25px;
+                            background: transparent;
+                            border: none;
+                            box-shadow: none;
+                            cursor: pointer;
+                    } 
+                }   
+                
+            }
+        }
+    }
+
+    .about-us__poster {
+        @include flexRow;
+        flex-wrap: wrap;
+        justify-content: center;
+    
+        .about-us__poster-images {
+            max-width: 30%;
+            flex-grow: 1;
+            
+
+            .poster-images__holder {
+                margin-left: 20px;
+                overflow: hidden;
+
+                img {
+                    @include coverWidth;
+                    @include transition(transform, .5s, ease);
+                    min-height: 350px;
+                    max-height: 350px;
+                    display: block;
+
+                    &:hover {
+                        @include scale(1.2);
+                    }
+                }
+            }
+
+            
+
+            .first-poster {
+                margin-left: 0;
+            }
+            
+        }
+
+    }
+    
+}
+    
+    
+    
+
+
+.about-us__brands {
+    @include flexRow;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+
+    .brands {
+        opacity: 50%;
+        margin-left: 20px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+        img{
+            @include transition(transform, .5s, ease);
+
+            &:hover {
+                cursor: pointer;
+                @include scale(1.3);
+            }
+        } 
+        
+        
+    }
+}
+
+
+
+
+/***************SHIPPING**************/
+.free-shipping {
+    background-color: $main-color;
+    @include centerAlign;
+
+    .shippings {
+        @include flexRow;
+        justify-content: center;
+
+        .shipping {
+            width: 45%;
+            
+            &:first-child {
+                .shipping-holder {
+                    margin-left: 0;
+                }
+                
+            }
+    
+            .shipping-holder {
+                margin: 60px 0;
+                padding: 35px 40px;
+                background-color: $white;
+                font-size: $font-size-h2;
+                @include transition(all, .5s, ease);
+                margin-left: 30px;
+
+                &:hover {
+                    background-color: $main-font-color;
+
+                    a {
+                        color: $white;
+                        
+                    } 
+                    
+                } 
+                
+                a {
+                    color: $black;
+                }
+                 
+        
+            }
+        }
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
