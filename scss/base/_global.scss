@@ -1,0 +1,19 @@
+.stars {
+  direction: rtl;
+  a {
+    svg {
+      fill: $border-color;
+      transition: all 0.4s ease;
+    }
+    &:hover {
+      svg {
+        fill: $star-color;
+      }
+    }
+    &:hover ~ a {
+      svg {
+        fill: $star-color;
+      }
+    }
+  }
+}

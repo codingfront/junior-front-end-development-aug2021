@@ -1,0 +1,17 @@
+@mixin displayer($width: 100%, $flex-direction: row) {
+  display: flex;
+  flex-direction: $flex-direction;
+  width: $width;
+}
+
+@mixin breakMin($width) {
+  @media screen and (min-width: $width+1) {
+    @content;
+  }
+}
+
+@mixin breakMax($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}

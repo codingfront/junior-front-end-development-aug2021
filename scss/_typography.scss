@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "karla";
+  src: url("/fonts/Karla-Regular.ttf") format("trueType");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "karla";
+  src: url("/fonts/Karla-Bold.ttf") format("trueType");
+  font-weight: bold;
+}
+/* font RobotoSlab*/
+
+@font-face {
+  font-family: "RobotoSlab";
+  src: url("/fonts/RobotoSlab-Regular.ttf") format("trueType");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "RobotoSlab";
+  src: url("/fonts/RobotoSlab-Bold.ttf") format("trueType");
+  font-weight: bold;
+}
+
+html {
+  font-size: $font-size;
+}
+
+body {
+  font-family: $primary_font_family;
+  font-size: $font-size;
+}

@@ -1,0 +1,21 @@
+@charset 'UTF-8';
+
+// Vendors
+@import "vendor/normalize";
+
+//
+@import "variables";
+@import "typography";
+
+//base
+@import "base/mixins";
+@import "base/global";
+
+//Page-specific styles
+@import "pages/home";
+
+//
+@import "layout";
+@import "footer";
+@import "header";
+@import "mobile-header";

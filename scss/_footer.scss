@@ -1,0 +1,28 @@
+#footer {
+  background-color: $main-color;
+  padding-bottom: 40px;
+  .social-media {
+    @include displayer();
+    justify-content: center;
+    align-items: center;
+    ul {
+      @include displayer($width: 20%);
+      justify-content: center;
+      li {
+        margin: 0 auto;
+        width: 25%;
+        padding: 35px 0 20px 0;
+        img {
+          width: 30%;
+        }
+      }
+    }
+  }
+  .copyright {
+    .date {
+      @include displayer();
+      color: $main-font-color;
+      justify-content: center;
+    }
+  }
+}

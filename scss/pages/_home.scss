@@ -1,0 +1,349 @@
+/* Home
+* ===============
+*
+* Place all your home page declarations here */
+#chair-container {
+  background: linear-gradient($main-color 50%, $body-backgroud 50%);
+  width: 100%;
+  padding: 55px 0;
+  #chair-parent {
+    @include displayer();
+    justify-content: center;
+    align-items: center;
+    .arrows_left,
+    .arrows_right {
+      background-color: $body-backgroud;
+      border-radius: 2px;
+      padding: 7px 14px;
+      box-shadow: 0 2px 6px 0 $border-shadow;
+    }
+    .chair {
+      direction: rtl;
+      @include displayer($width: 33.33%, $flex-direction: column);
+      align-items: center;
+      @include breakMax($tablet-width) {
+        width: 50%;
+      }
+      img {
+        width: 85%;
+      }
+      .title {
+        font-family: $secondary-font-family;
+        font-size: 1.2rem;
+      }
+      .price {
+        color: $main-font-color;
+        padding-bottom: 10px;
+      }
+      .rate {
+        @extend .stars;
+      }
+      &:nth-last-child(2) {
+        @include breakMax($tablet-width) {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+#rooms {
+  @include displayer();
+  flex-wrap: wrap;
+  overflow-x: hidden;
+  position: relative;
+  .rooms-category {
+    width: 33.33%;
+    position: relative;
+    @include breakMax($tablet-width) {
+      width: 50%;
+    }
+    &:nth-last-child(2) {
+      @include breakMax($tablet-width) {
+        display: none;
+      }
+    }
+    &:after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: $shadow-color;
+    }
+    .rooms-category-name {
+      font-family: $secondary-font-family;
+      letter-spacing: 3px;
+      color: $body-backgroud;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      left: 50%;
+      text-align: center;
+      z-index: 1;
+      h3 {
+        font-size: 1.5rem;
+        padding: 40px 0;
+        @include breakMax($tablet-width) {
+          font-size: 1rem;
+        }
+        @include breakMax($mobile-width) {
+          font-size: 0.8rem;
+        }
+      }
+      .btn {
+        padding: 9px 16px;
+        background: none;
+        color: $body-backgroud;
+        border: solid 2px $body-backgroud;
+        min-width: 180px;
+        font-weight: bold;
+        font-size: 1rem;
+        font-family: $primary-font-family;
+        @include breakMax($tablet-width) {
+          font-size: 0.8rem;
+        }
+        @include breakMax($mobile-width) {
+          font-size: 0.6rem;
+        }
+      }
+    }
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.main-title {
+  @include displayer($flex-direction: column);
+  align-items: center;
+  position: relative;
+  padding: 45px 0 30px 0;
+  img {
+    width: 60px;
+  }
+  h2 {
+    font-weight: bold;
+    font-family: $secondary-font-family;
+  }
+  span {
+    color: $main-font-color;
+  }
+}
+
+#product-features {
+  ul {
+    @include displayer();
+    flex-wrap: wrap;
+    justify-content: center;
+    li {
+      @include displayer($width: 33.33%);
+      @include breakMax($tablet-width) {
+        width: 50%;
+      }
+      @include breakMax($mobile-width) {
+        width: 100%;
+      }
+      margin: 10px 0;
+      .product-features-image {
+        width: 50%;
+        height: auto;
+        img {
+          width: 100%;
+        }
+      }
+      .product-features-explaination {
+        direction: rtl;
+        width: 50%;
+        height: auto;
+        padding-left: 15px;
+        .name {
+          font-weight: bold;
+          font-family: $secondary-font-family;
+          font-size: 1rem;
+          letter-spacing: 1px;
+        }
+        .price {
+          color: $main-font-color;
+          font-size: 1rem;
+          padding: 10px 0;
+          margin: 0;
+          .product-off {
+            text-decoration: line-through;
+          }
+        }
+        .rate {
+          @extend .stars;
+        }
+      }
+    }
+  }
+}
+
+#latest-product {
+  ul {
+    @include displayer();
+    flex-wrap: wrap;
+    list-style: none;
+    li {
+      width: 25%;
+      @include breakMax($tablet-width) {
+        width: 50%;
+      }
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        display: block;
+      }
+    }
+  }
+}
+
+#about-us {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  gap: 20px;
+  padding-top: 10px;
+  .about-us-items {
+    img {
+      object-fit: cover;
+      width: 100%;
+      display: block;
+    }
+  }
+  .about-us-cover {
+    grid-column: 1/3;
+    @include breakMax($tablet-width) {
+      grid-column: 1/4;
+    }
+    background: url("/imgs/delphinus/about-us-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    line-height: 29px;
+    color: $body-backgroud;
+    padding: 15px 0 15px 40px;
+    h3 {
+      font-family: $secondary-font-family;
+      font-size: 1rem;
+    }
+    p {
+      font-family: $primary-font-family;
+      font-size: 0.8rem;
+      margin: 0;
+      padding-bottom: 10px;
+    }
+  }
+  .news-letter {
+    text-align: center;
+    border: 2px solid $border-color;
+    padding: 35px 20px;
+    line-height: 22px;
+    @include breakMax($tablet-width) {
+      grid-column: 1/4;
+    }
+    h4 {
+      font-family: $secondary-font-family;
+    }
+    p {
+      color: $main-font-color;
+    }
+    form {
+      position: relative;
+      .input {
+        border: 2px solid $border-color;
+        padding: 8px 0 8px 5px;
+        width: 100%;
+      }
+      .newsletter-btn {
+        position: absolute;
+        right: 13px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: $main-font-color;
+        background: none;
+        border: none;
+      }
+    }
+  }
+}
+
+#brands {
+  padding: 50px 0;
+  ul {
+    @include displayer();
+    flex-wrap: wrap;
+    list-style: none;
+    li {
+      width: 16.66%;
+      @include breakMax($tablet-width) {
+        width: 33%;
+      }
+      opacity: 0.6;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+#free-shipping {
+  @include displayer();
+  background-color: $main-color;
+  justify-content: center;
+  a {
+    background-color: $body-backgroud;
+    font-family: $secondary-font-family;
+    font-weight: bold;
+    color: $black-color;
+    padding: 30px 150px;
+    margin: 60px 15px;
+    font-size: 1.5rem;
+    @include breakMax($medium-width) {
+      padding: 20px 100px;
+      margin: 40px 10px;
+      font-size: 1.2rem;
+    }
+    @include breakMax($tablet-width) {
+      padding: 18px 85px;
+      margin: 35px 9px;
+      font-size: 1rem;
+    }
+    @include breakMax($mobile-width) {
+      padding: 15px 75px;
+      margin: 30px 7px;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+#bottom-nav {
+  padding: 30px 0;
+  ul {
+    @include displayer();
+    flex-wrap: wrap;
+    li {
+      width: 25%;
+      @include breakMax($tablet-width) {
+        width: 50%;
+      }
+      h4 {
+        font-family: $secondary-font-family;
+      }
+      a {
+        p {
+          font-weight: bold;
+          color: $main-font-color;
+          padding: 5px 0;
+          &:hover {
+            color: $black-color;
+          }
+        }
+      }
+    }
+  }
+}
