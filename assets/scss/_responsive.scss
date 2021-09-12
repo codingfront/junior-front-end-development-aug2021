@@ -11,6 +11,15 @@
         }
         header#mobile-header{
             display: block;
+            position: fixed;
+            top: 0;
+            left:0;
+            width: 100%;
+            z-index: 9;
+            background-color: $white;
+        }
+        #chair-section{
+            margin-top: 60px;
         }
     }
     // 960

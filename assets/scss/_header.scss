@@ -26,6 +26,16 @@ header#header{
             }
         }
         &_bottombar{
+            &.fixed{
+                position: fixed;
+                top: 0;
+                left:0;
+                width: 100%;
+                z-index: 9;
+                background-color: $white;
+            }
+            background-color: $white;
+            @include transition(transform 1.2s ease);
             padding: 20px 30px;
             box-shadow: 0 5px 10px 1px rgb(0 0 0 / 5%);
             &-left-area {

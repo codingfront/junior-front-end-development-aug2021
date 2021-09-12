@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/solid.min.css" />
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/fontawesome.min.css" />
+
 </head>
 
 <body>
@@ -926,6 +927,23 @@
             </div>
         </section>
     </footer>
+    <script>
+        window.onload = function () {
+            var bottomHeader = document.getElementsByClassName('header_bottombar')[0];
+            function desktopHeaderhandler() {
+                var scrollY = window.scrollY;
+                var whenScrolledSoMuch = 55;
+                if (scrollY >= whenScrolledSoMuch) {
+                    bottomHeader.classList.add('fixed');
+                } else {
+                    bottomHeader.classList.remove('fixed');
+                }
+            }
+            desktopHeaderhandler();
+            window.addEventListener('scroll', desktopHeaderhandler);
+        };
+    </script>
+
 </body>
 
 </html>
