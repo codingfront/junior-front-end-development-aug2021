@@ -104,10 +104,10 @@
             </div>
         </div>
     </header>
-    <div class="position-relative">
-        <div class="gray-background"></div>
-    </div>
     <section id="chair-section">
+        <div class="position-relative">
+            <div class="gray-background"></div>
+        </div>
         <div class="container">
             <div class="position-relative">
                 <div class="chairParent d-flex flex-wrap justify-content-space-around text-center">
@@ -927,16 +927,21 @@
             </div>
         </section>
     </footer>
-    <script>
+    <script type="text/javascript">
         window.onload = function () {
-            var bottomHeader = document.getElementsByClassName('header_bottombar')[0];
+            var bottomHeader = document.querySelector('.header_bottombar');
+            var chairSection = document.getElementById('chair-section');
             function desktopHeaderhandler() {
                 var scrollY = window.scrollY;
                 var whenScrolledSoMuch = 55;
-                if (scrollY >= whenScrolledSoMuch) {
-                    bottomHeader.classList.add('fixed');
-                } else {
-                    bottomHeader.classList.remove('fixed');
+                if (screen.width > 992) {
+                    if (scrollY >= whenScrolledSoMuch) {
+                        bottomHeader.classList.add('fixed');
+                        chairSection.style.marginTop = bottomHeader.offsetHeight + 'px';
+                    } else {
+                        bottomHeader.classList.remove('fixed');
+                        chairSection.style.marginTop = '0';
+                    }
                 }
             }
             desktopHeaderhandler();
