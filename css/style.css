@@ -1115,6 +1115,16 @@ figure {
   align-items: center;
 }
 
+.header__nav.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 10px;
+  z-index: 10;
+  background: #fff;
+}
+
 @media only screen and (max-width: 62.5em) {
   .header {
     display: none;
@@ -1128,6 +1138,12 @@ figure {
 .mobile-header {
   display: none;
   padding: 10px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background: #fff;
 }
 
 .mobile-header__responsive {

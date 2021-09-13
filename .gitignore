@@ -47,3 +47,4 @@ node_modules/
 # bower packages
 bower_components/
 
+.github/
