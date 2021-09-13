@@ -937,6 +937,15 @@ a {
   padding: 1.4rem 2.1rem;
 }
 
+#header .header-bottom.fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  background: #ffffff;
+  z-index: 10;
+}
+
 #header .header-bottom .navbar {
   display: flex;
   justify-content: center;
@@ -1093,6 +1102,16 @@ a {
   }
   #mobile-header {
     display: block;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #ffffff;
+    z-index: 15;
+    margin: 0;
+    padding: 10px 0;
+  }
+  #sliders {
+    margin-top: 38px;
   }
   #sliders .slider-cheir:last-child {
     display: none;

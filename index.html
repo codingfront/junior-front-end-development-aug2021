@@ -209,6 +209,7 @@
                 </div>
                 <div class="project-wrapper-list">
                     <h3 class="project-title">bed room</h3>
+                    
                     <div class="project-text">
                         <a href="#" class="project-link">shop now</a>
                     </div>
@@ -780,7 +781,25 @@
         </div>
     </footer>
 
-    
+    <script>
+        window.onload = function(){  
+            var fixeHeader = document.getElementsByClassName('header-bottom')[0] ;
+            var fixePlace = 464 ;
+            function getScrollY () {
+                var scroll = window.scrollY;
+                console.log(window.scrollY);
+                if (scroll>fixePlace) {
+                    fixeHeader.classList.add('fixed');
+                } else {
+                    fixeHeader.classList.remove('fixed') ;
+                }
+                
+                return window.scrollY ;
+            }
+            window.addEventListener('scroll',getScrollY);
+            getScrollY();
+        }
+    </script>
 
     
    

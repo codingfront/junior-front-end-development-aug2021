@@ -86,7 +86,6 @@
          background-color: $shadow-color;
         }  
         .project-wrapper-list {
-           
              position: absolute;
              top: 50%;
             @include translate(-50%,-50%);
@@ -105,7 +104,8 @@
                 padding: .7rem 1.07rem;
                 color: $white;
                 min-width: 10.7rem;
-            }
+            } 
+  
         }
     }
  }

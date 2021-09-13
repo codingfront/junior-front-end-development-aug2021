@@ -31,7 +31,14 @@
    }
        .header-bottom{
            padding: 1.4rem 2.1rem;
-    
+           &.fixed{
+               position: fixed;
+               top: 0;
+               right: 0;
+               width: 100%;
+               background: $white;
+               z-index: 10;
+           }
            .navbar{
                @include centerContent;
                justify-content: space-between;

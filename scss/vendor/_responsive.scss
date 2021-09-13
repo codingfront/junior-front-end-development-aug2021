@@ -18,11 +18,20 @@
     }
     #mobile-header{
         display: block;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: $white;
+        z-index: 15;
+        margin: 0;
+        padding: 10px 0;
     } 
-    #sliders .slider-cheir:last-child{
-        display: none;
-        
+    #sliders {
+        margin-top:38px ;
+        & .slider-cheir:last-child{
+        display: none;   
      }
+    }
   
     #aboutus-section .aboutus .aboutus-rows {
         margin: 0 1rem;
