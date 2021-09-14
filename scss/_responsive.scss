@@ -45,6 +45,10 @@
         display: block;
     }
 
+    .margin-from-fixed {
+        margin-top: 64.8px;
+    }
+
     .about-us__content {
         .about-us__information {
             @include flexColumn;

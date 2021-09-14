@@ -727,7 +727,6 @@ input[type="checkbox"] {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .product-features .product-features__item .product-features__item-holder {
@@ -1070,6 +1069,12 @@ input[type="checkbox"] {
 #mobile-header {
   display: none;
   padding: 15px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: #ffffff;
 }
 
 #mobile-header .mobile-header__holder {
@@ -1225,6 +1230,9 @@ input[type="checkbox"] {
   }
   #mobile-header {
     display: block;
+  }
+  .margin-from-fixed {
+    margin-top: 64.8px;
   }
   .about-us__content .about-us__information {
     display: flex;
