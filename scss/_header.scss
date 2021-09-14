@@ -27,15 +27,25 @@
 }
 
 
+
 .header-bottom {
     padding: 20px;
+
+    &.fixed {
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background-color: $white;
+        z-index: 1;
+    }
 
     .header-bottom__holder {
         @include flexRow;
         justify-content: space-between;
 
         .logo {
-            margin-top: 20px;
+            margin-top: 15px;
         }
 
         .main-nav {
@@ -58,12 +68,16 @@
         }
 
         .search {
-            margin-top: 20px;
+            margin-top: 15px;
             margin-right: 10px;
             cursor: pointer;
         }
     }    
 }
+
+
+
+
 
 
 

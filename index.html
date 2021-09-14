@@ -7,17 +7,7 @@
   <meta name="description" content="my-first-project">
   <link rel="stylesheet" type="text/css" href="css/style.css"/>
   <link rel="stylesheet" href="./css/fontawesome/all.css" />
-
-  <script>
-
-      var headerElement = document.getElementById('main-header');
-      console.log(headerElement);
-      var containers = document.getElementsByClassName('container');
-      var myArray = ['kimia', 'nikoo', 'nafiseh', 'parisa'];
-      var index = myArray[0];
-      var myString = 'ali';
-      var myQuery = document.querySelector('.container');
-  </script>
+  <script></script>
 </head>
 
 
@@ -886,5 +876,26 @@
         </div>
     </section>
 </footer>
+
+
+<!---------------SCRIPT--------------->
+<script>
+    window.onload = function() {
+        var fixHeader = document.getElementsByClassName('header-bottom')[0];
+        var whenFixed = 450;
+        function getScrollY() {
+            var scroll = window.scrollY;
+            console.log(scroll);
+            if(scroll>whenFixed) {
+                fixHeader.classList.add('fixed');
+            } else {
+                fixHeader.classList.remove('fixed');
+            }
+            return scroll;
+        };
+        window.addEventListener('scroll',getScrollY);
+        getScrollY();
+    }
+</script>
 </body>
 </html>
