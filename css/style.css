@@ -404,6 +404,18 @@ body {
   padding: 55px 0;
 }
 
+@media screen and (max-width: 800px) {
+  #chair-container {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  #chair-container {
+    margin-top: 40px;
+  }
+}
+
 #chair-container #chair-parent {
   display: flex;
   flex-direction: row;
@@ -963,6 +975,15 @@ i {
   border-bottom: solid 1px #dddddd;
 }
 
+#header .bottom-header.fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 10;
+  background: #ffffff;
+}
+
 #header .bottom-header .logo {
   width: 20%;
 }
@@ -1003,40 +1024,46 @@ i {
   margin-left: 77%;
 }
 
-header#mobile-header {
+#mobile-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 10;
+  background: #ffffff;
   padding: 10px 0;
 }
 
 @media screen and (min-width: 801px) {
-  header#mobile-header {
+  #mobile-header {
     display: none;
   }
 }
 
-header#mobile-header .mobile-header {
+#mobile-header .mobile-header {
   position: relative;
   height: 40px;
   padding: 0 20px;
 }
 
-header#mobile-header .mobile-header .mobile-header-left {
+#mobile-header .mobile-header .mobile-header-left {
   float: left;
 }
 
-header#mobile-header .mobile-header .mobile-header-left ul {
+#mobile-header .mobile-header .mobile-header-left ul {
   margin-top: 10px;
 }
 
-header#mobile-header .mobile-header .mobile-header-left ul li {
+#mobile-header .mobile-header .mobile-header-left ul li {
   display: inline-block;
 }
 
-header#mobile-header .mobile-header .mobile-header-left ul li a i {
+#mobile-header .mobile-header .mobile-header-left ul li a i {
   font-size: 1.2rem;
   color: #969696;
 }
 
-header#mobile-header .mobile-header .mobile-header-left ul li.basket span {
+#mobile-header .mobile-header .mobile-header-left ul li.basket span {
   position: absolute;
   background: red;
   color: #ffffff;
@@ -1051,46 +1078,46 @@ header#mobile-header .mobile-header .mobile-header-left ul li.basket span {
   text-align: center;
 }
 
-header#mobile-header .mobile-header .mobile-header-left ul li:first-child {
+#mobile-header .mobile-header .mobile-header-left ul li:first-child {
   margin-right: 15px;
 }
 
-header#mobile-header .mobile-header .mobile-header-right {
+#mobile-header .mobile-header .mobile-header-right {
   float: right;
 }
 
-header#mobile-header .mobile-header .mobile-header-right ul {
+#mobile-header .mobile-header .mobile-header-right ul {
   margin-top: 10px;
 }
 
-header#mobile-header .mobile-header .mobile-header-right ul li {
+#mobile-header .mobile-header .mobile-header-right ul li {
   display: inline-block;
 }
 
-header#mobile-header .mobile-header .mobile-header-right ul li a i {
+#mobile-header .mobile-header .mobile-header-right ul li a i {
   font-size: 1.2rem;
   color: #969696;
 }
 
-header#mobile-header .mobile-header .mobile-header-right ul li:last-child {
+#mobile-header .mobile-header .mobile-header-right ul li:last-child {
   margin-left: 15px;
 }
 
-header#mobile-header .mobile-header .mobile-header-right ul li:last-child i {
+#mobile-header .mobile-header .mobile-header-right ul li:last-child i {
   font-size: 1.3rem;
   background: #ffffff;
   border-radius: 5px;
   padding: 5px;
 }
 
-header#mobile-header .mobile-header .mobile-header-logo {
+#mobile-header .mobile-header .mobile-header-logo {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
 
-header#mobile-header .mobile-header .mobile-header-logo img {
+#mobile-header .mobile-header .mobile-header-logo img {
   max-width: 150px;
   height: auto;
 }

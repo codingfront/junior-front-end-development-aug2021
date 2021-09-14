@@ -757,7 +757,26 @@
             <div class="copyright">
                 <span class="date">@2016 Delphinus</span>
             </div>
+
         </footer>
+
+        <script>
+            window.onload = function() {
+               var fixHeader = document.getElementsByClassName('bottom-header')[0];
+               var fixPlace = 564;
+               function getScrollY(){
+                   var scroll = window.scrollY;
+                   console.log(window.scrollY);
+                   if(scroll>fixPlace){
+                       fixHeader.classList.add('fixed');
+                   } else {
+                       fixHeader.classList.remove('fixed');
+                   }
+                   return window.scrollY;
+               };
+            window.addEventListener('scroll',getScrollY);
+            getScrollY();
+            }
+        </script>    
     </body>
 </html>
-

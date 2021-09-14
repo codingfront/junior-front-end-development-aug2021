@@ -3,6 +3,12 @@
 *
 * Place all your home page declarations here */
 #chair-container {
+  @include breakMax($tablet-width) {
+    margin-top: 40px;
+  }
+  @include breakMax($mobile-width) {
+    margin-top: 40px;
+  }
   background: linear-gradient($main-color 50%, $body-backgroud 50%);
   width: 100%;
   padding: 55px 0;

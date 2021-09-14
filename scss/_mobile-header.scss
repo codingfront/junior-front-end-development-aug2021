@@ -1,4 +1,10 @@
-header#mobile-header {
+#mobile-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 10;
+  background: $body-backgroud;
   padding: 10px 0;
   @include breakMin($tablet-width) {
     display: none;
