@@ -163,7 +163,7 @@
 .product-features {
     @include flexRow;
     flex-wrap: wrap;
-    
+    justify-content: center;
 
     .product-features__item {
         
